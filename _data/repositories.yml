@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - KozakHou
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - KozakHou/Reg-PINNs
+  - maziarraissi/PINNs
+  - KozakHou/Python-Tensorflow-Fourier-Neural-Operator
+  - neuraloperator/neuraloperator
