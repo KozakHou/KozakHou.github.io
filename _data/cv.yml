@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: PoHan (Kozak) Hou
     - name: Date of Birth
-      value: 14th March 1879
+      value: 16th July 2001
     - name: Languages
       value: English, German
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Masters of Science
+      institution: Imperial College London, London, United Kingdom
+      year: 2024
       description:
         - Description 1.
         - Description 2.

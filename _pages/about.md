@@ -1,25 +1,22 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: ACSE,  Imperial College London
+nav_order: 1
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: False # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a master's student advised by [Gerard Gorman](https://profiles.imperial.ac.uk/g.gorman/about) in the MSc ACSE at Imperial College London. My research interests are in applied science and machine learning. Recently, I have been working on developing a machine learning model [Regression-based Physics Informed Neural Networks](https://github.com/KozakHou/Reg-PINNs) for empirical equation on EVERY applied sciences. I am fortunate to have received sponsorship from Centre for Computational Methods in Science and Engineering (CMSE).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Prior to my master's, I completed my bachelor's degree in Space Science and Engineering at National Central University with a credit program in Interdicipline Artificial Intilligence in Taiwan (2020-2024). I was privileged to be advised by [Chun-Yu Lin](https://sites.google.com/site/lincytw/) and [Jih-Hong Shue](http://themis.ss.ncu.edu.tw/e_taiwan_themis.htm) for their guidance in high-performance scientific computing and numerical methods in space physics.

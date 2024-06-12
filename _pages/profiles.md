@@ -1,28 +1,28 @@
 ---
 layout: profiles
-permalink: /people/
-title: people
-description: members of the lab or group
+permalink: /People/
+title: People
+description: Members of the leibaoinmyfamily
 nav: true
-nav_order: 7
+nav_order: 9
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: right
     image: prof_pic.jpg
-    content: about_einstein.md
+    content: about_kozak.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
+      <p>Applied CSE,</p>
+      <p>Imperial College London</p>
+      <p>London SW7 2AZ, UK</p>
+  - align: right
+    image: bastard.jpg
+    content: about_bastard.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>Advanced EE,</p>
+      <p>University of Leicester</p>
+      <p>Leicester LE1 7RH, UK</p>
 ---
