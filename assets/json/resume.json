@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Kozak Hou",
+    "name": "Kozak (Po-Han) Hou",
     "label": "Master's Student",
     "image": "",
     "email": "kh124@ic.ac.uk",
@@ -329,7 +329,7 @@
       "highlights": ["Fourier Neural Operator", "Numerical Methods", "Computational Fluid Dynamics", "Benchmarking"],
       "startDate": "2023-09-28",
       "endDate": "2024-01-18",
-      "url": "https://kozakhou.github.io/projects/"
+      "url": "https://kozakhou.github.io/Projects/"
     }
   ]
 }

@@ -5,14 +5,23 @@
     {% include head.liquid %}
     <style>
       body, html {
-        height: 100%;
+        height: 90%;
         margin: 0;
         padding: 0;
       }
+      #calendar-container {
+        display: flex;
+        height: 100vh; /* 调整高度以占据视图高度的80% */
+        width: 100%;
+      }
       #calendar {
-        height: 80vh; /* 调整高度以占据视图高度的80% */
         width: 90%; /* 调整宽度以占据页面的90% */
-        margin: 0px auto;
+        max-width: 1200px; /* 最大宽度 */
+      }
+      iframe {
+        width: 125%;
+        height: 80%;
+        border: 0;
       }
     </style>
   </head>
@@ -34,8 +43,10 @@
           <div class="clearfix">{{ content }}</div>
 
           <!-- Calendar -->
-          <div id="calendar">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FTaipei&bgcolor=%23ffffff&src=a296YWsyMDAxMDcxNkBnbWFpbC5jb20&src=ajVkaG01NW1ub2JubzZoYmJ1MWNrNGVjbTEzMGZuMmRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&src=emgtdHcudGFpd2FuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23C0CA33&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          <div id="calendar-container">
+            <div id="calendar">
+              <iframe src="https://outlook.office365.com/owa/calendar/4367590b26c8400eb4ac35241304fb0f@imperial.ac.uk/743523ad324a46bdb47fc46e6358791c2855423012815369094/calendar.html" frameborder="0" scrolling="no"></iframe>
+            </div>
           </div>
         </article>
       </div>
