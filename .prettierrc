@@ -1,6 +1,3 @@
-plugins: ["@shopify/prettier-plugin-liquid"]
-printWidth: 150
-trailingComma: "es5"
-yarn add prettier -g
-yarn run prettier --write .
-yarn run prettier --check .
+// plugins: ["@shopify/prettier-plugin-liquid"]
+// printWidth: 150
+// trailingComma: "es5"
