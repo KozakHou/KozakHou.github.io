@@ -3,10 +3,8 @@ layout: page
 title: project 4
 description: another without an image
 img:
-importance: 3
-category: fun
+importance: 4
 ---
-
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
@@ -60,7 +58,7 @@ You describe how you toiled, sweated, _bled_ for your project, and then... you r
 </div>
 
 The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
+Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the `<a href="https://getbootstrap.com/docs/4.4/layout/grid/">`Bootstrap Grid`</a>` system).
 To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
 Here's the code for the last row of images above:
 
