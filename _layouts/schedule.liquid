@@ -6,6 +6,7 @@
     <style>
       body, html {
         height: 90%;
+        width: 100%;
         margin: 0;
         padding: 0;
       }
@@ -13,15 +14,17 @@
         display: flex;
         height: 100vh; /* 调整高度以占据视图高度的80% */
         width: 100%;
+        padding: 0;
       }
       #calendar {
-        width: 90%; /* 调整宽度以占据页面的90% */
-        max-width: 1200px; /* 最大宽度 */
+        width: 130%; /* 调整宽度以占据页面的90% */
+        max-width: none; /* 最大宽度 */
+        margin: 10px -20px 50px;
         overflow-x: auto;
       }
       iframe {
         width: 125%;
-        height: 80%;
+        height: 99%;
         border: 0;
       }
     </style>
