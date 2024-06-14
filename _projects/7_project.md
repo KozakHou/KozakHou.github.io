@@ -2,7 +2,7 @@
 layout: page
 title: Pretrained Fourier Neural Operator for Non-Newtonian Fluid Dynamics [Confidential]
 description: with background image
-img: assets/img/4.jpg
+img: assets/img/cae.jpg
 importance: 7
 related_publications: true
 ---
