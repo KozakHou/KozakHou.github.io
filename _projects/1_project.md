@@ -195,7 +195,7 @@ The above graph reveals the evaluation of different angular segments ($$ \|{\the
     </div>
 </div>
 <div class="caption">
-    RMSE in different region of $$ Bz $$
+    RMSE in different region of $$ Bz $$.
 </div>
 
 <br>
@@ -210,7 +210,7 @@ We then investigate the ability of the models to handle stronger $$ Bz $$ values
     </div>
 </div>
 <div class="caption">
-    RMSE in different region of $$ Dp $$
+    RMSE in different region of $$ Dp $$.
 </div>
 
 <br>

@@ -18,7 +18,7 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'observer'
-    gem 'mini_racer'
+    # gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
 end

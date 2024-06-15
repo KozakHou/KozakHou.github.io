@@ -114,7 +114,7 @@
       "date": "2024-05-31",
       "awarder": "College of Earth Science, National Central University",
       "url": "https://escollege.ncu.edu.tw/",
-      "summary": "Academic performance in the top 10%, recommended for selection by the department's curriculum committee."
+      "summary": "Academic performance in the top 5%, recommended for selection by the department's curriculum committee."
     },
     {
       "title": "Honor for Academic Excellence",
@@ -135,7 +135,7 @@
     {
       "name": "TensorFlow Developer Certificate",
       "date": "2023-02-23",
-      "issuer": "Google Developers",
+      "issuer": "Google",
       "url": "https://developers.google.com/certification/directory/tensorflow",
       "icon": "fa-solid fa-certificate"
     },
@@ -193,8 +193,8 @@
         "Plasma Physics",
         "Solar Physics",
         "Electromagnetism",
-        "Magnetospause",
-        "Remote Sensing Image Analysis and Application",
+        "Magnetopause",
+        "Remote Sensing Image Analysis",
         "Attitude Determination and Control System"
       ]
     },
@@ -264,15 +264,20 @@
   ],
   "references": [
     {
-      "name": "Professor Chia-Hsien Lin",
+      "name": "Doctor Chun-Yu (Chris) Lin",
+      "icon": "fa-solid fa-star",
+      "reference": "Associate Researcher at National Center for High-performance Computing, National Applied Research Laboratories, Taiwan."
+    },
+    {
+      "name": "Professor Jih-Hong Shue",
       "icon": "fa-solid fa-star",
       "reference": "Professor at Department of Space Science and Engineering, National Central University, Taiwan."
     },
     {
-      "name": "Doctor Chun-Yu (Chris) Lin",
+      "name": "Professor Chia-Hsien Lin",
       "icon": "fa-solid fa-star",
-      "reference": "Associate Researcher at National Center for High-performance Computing, National Applied Research Laboratories, Taiwan."
-      }
+      "reference": "Professor at Department of Space Science and Engineering, National Central University, Taiwan."
+    }
   ],
   "projects": [
     {
