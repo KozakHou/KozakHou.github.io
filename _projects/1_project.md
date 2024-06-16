@@ -58,6 +58,7 @@ $$ r_0 = \left(9.332 + 1.308 \cdot \tanh\left(0.213 \cdot (B_z + 11.191) - 0.568
 $$ \alpha = \left(0.493 - 3.5 \times 10^{-4} \cdot B_z\right) \cdot (D_p)^{\left(\frac{1}{11.92}\right)} $$
 
 
+
 <div class="row justify-content-sm-center">
     <div class="col-sm-6 mt-2 mt-md-0">
         {% include figure.liquid path="assets/img/p.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
@@ -67,7 +68,8 @@ $$ \alpha = \left(0.493 - 3.5 \times 10^{-4} \cdot B_z\right) \cdot (D_p)^{\left
     </div>
 </div>
 <div class="caption">
-    $$ (r_0 \space \& \space 𝛼) \space \space v.s. \space Pressure \space and \space ( r_0 \& 𝛼) \space v.s. \space IMF \space Bz $$
+    (r_0 and 𝛼) vs. Pressureand  (r_0 and 𝛼) vs. IMF B_z
+
 </div>
 
 #### Proposed Neural Network Architecture
@@ -195,7 +197,7 @@ The above graph reveals the evaluation of different angular segments ($$ \|{\the
     </div>
 </div>
 <div class="caption">
-    RMSE in different region of $$ Bz $$.
+    RMSE in different region of Bz.
 </div>
 
 <br>
@@ -210,7 +212,7 @@ We then investigate the ability of the models to handle stronger $$ Bz $$ values
     </div>
 </div>
 <div class="caption">
-    RMSE in different region of $$ Dp $$.
+    RMSE in different region of Dp .
 </div>
 
 <br>

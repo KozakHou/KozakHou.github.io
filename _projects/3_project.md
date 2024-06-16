@@ -67,18 +67,13 @@ X, y = emnist.data, emnist.target
 
 ## Hyperscan Data
 
-The hyperscan data from the Japanese satellite, HIMAWARI-8, is a set of images with 16 labeled classes (9 were used in this project). The hyperscan data is used to analysis the weather conditions in Japan and Taiwan such as lonitude, latitude, temperature, humidity, precipitation, and etc. It provides a high-resolution image (2 x 2  
+The hyperscan data from the Japanese satellite, HIMAWARI-8, is a set of images with 16 labeled classes (9 were used in this project). The hyperscan data is used to analysis the weather conditions in Japan and Taiwan such as lonitude, latitude, temperature, humidity, precipitation, and etc. It provides a high-resolution image (2 x 2  $${km}^2$$) of the Earth's surface every 10 minutes.
 
-$$
-{km}^2
-$$
-
-) of the Earth's surface every 10 minutes.
 
 > ##### Reminder
 >
 > This project won't be able to provide the hyperscan data from the Japanese satellite, HIMAWARI-8, since it is a proprietary data needed to be authorized by JAXA (Japan Aerospace Exploration Agency). The results demonstrating in this project are dedicating to present the time consumption and performance of the RAPIDS library.
-> {: .block-warning }
+{: .block-warning }
 
 <br>
 
