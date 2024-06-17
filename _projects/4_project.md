@@ -5,6 +5,8 @@ description: Kozak Hou, Jih-Hong Shue
 img: assets/img/KLM.jpg
 importance: 4
 ---
+<br>
+
 ## Problem Statement
 
 Satellite Attitude Determination and Control System (ADCS) is an essential component for almost every satellite mission. It provides the satellite in-suite velocity and orientation information. However, we do not have enough ground station to track every satellite in the sky. Therefore, we need to develop an onboard system to estimate the satellite's attitude. The widely used method is the Kalman Filter or its upgraded version, the Extended Kalman Filter. However, the Kalman Filter is not suitable for nonlinear systems. Therefore, we need to develop a new method to estimate the satellite's attitude. The goal of this project is to compare the Kalman Filter with Recurrent-based machine learning (Bi-GRU) on Satellite Attitude Determination.
@@ -61,7 +63,7 @@ It is an optimal estimator that minimizes the mean squared error of the estimate
 
 #### Recurrent-based machine learning (Bi-GRU)
 
-The Recurrent-based machine learning (Bi-GRU) is a type of neural network that is suitable for sequential data. The Bi-GRU is a type of Recurrent Neural Network (RNN) that is capable of learning long-term dependencies with following configuration : [**Forward GRU**, **Backward GRU**]. The following mathematical equations show how the Bi-GRU works:
+The Recurrent-based machine learning (Bi-GRU) is a type of neural network that is suitable for sequential data. It is a type of Recurrent Neural Network (RNN) that is capable of learning long-term dependencies with following configuration : [**Forward GRU**, **Backward GRU**]. The following mathematical equations show how the Bi-GRU works:
 
 $$
 \begin{aligned}

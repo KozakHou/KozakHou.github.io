@@ -5,6 +5,7 @@ description: Kozak Hou
 img: assets/img/adv.png
 importance: 2
 ---
+<br>
 
 ## Problem Statement
 The advection equation is a simple partial differential equation that describes the transport of a quantity by a velocity field. It is a fundamental equation in fluid dynamics and is used to model a wide range of physical phenomena. The advection equation is given by:

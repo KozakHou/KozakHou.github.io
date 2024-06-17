@@ -5,6 +5,8 @@ description: Kozak Hou
 img: assets/img/EMNIST.png
 importance: 3
 ---
+<br>
+
 ## Problem Statement
 
 The goal of this project is to implement a high performance computing (HPC) application using NVIDIA-RAPIDS. The dataset used for this project are the EMNIST dataset and the hyperscan data from Japanese satellite, HIMAWARI -8. The application will be implemented using Python and the RAPIDS library, which is a collection of GPU-accelerated data science libraries.
