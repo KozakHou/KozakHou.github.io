@@ -298,7 +298,7 @@
     },
     {
       "name": "High Performance Computing with NVIDIA-RAPIDS",
-      "summary": "Employed RAPIDS to replace Scikit-Learn and trained the EMNIST dataset using SVM on a GPU (NVIDIA - RTX5000), resulting in a significantly reduced training time of only 17 seconds.",
+      "summary": "Employed RAPIDS to replace Scikit-Learn and trained the EMNIST dataset using SVM on a GPU (NVIDIA - RTX5000), resulting in a significantly reduced training time of only 91 seconds.",
       "highlights": ["RAPIDS-cuML", "RAPIDS-cuDF", "Image Classification", "Benchmarking"],
       "startDate": "2022-09-16",
       "endDate": "2023-01-20",
