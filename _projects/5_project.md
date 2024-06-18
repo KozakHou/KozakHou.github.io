@@ -3,6 +3,7 @@ layout: page
 title: Automatic Emergency Dust-Free solution on-board International Space Station with Bi-GRU
 description: Kozak Hou, Wei-Chih Lin, Hong-Chun Hou, Yu-Hao Huang, Jih-Hong Shue
 img: assets/img/AED.jpg
+permalink: /projects/automatic-emergency-dust-free-solution-on-board-international-space-station-with-bi-gru/
 importance: 5
 ---
 <br>
@@ -137,19 +138,35 @@ Major thanks to the AI Space Challenge committee for providing ICE Cube’s AI B
 <br>
 
 ## References
+
 - Urban DL, Cleary T, Yang J, Mulholland G, Yuan Z,Dust and Aerosol Measurement Feasibility Test [online], 2006. Space Station Research Explorer on NASA.gov. Available from: https://www.nasa.gov/mission_pages/station/research/experiments/explorer/Investigation.html?#id=246 
-- Urban DL, Ruff GA, Yuan Z, Cleary T, Griffin DW, Yang J, Mulholland G, Detection of Smoke from Microgravity Fires, [2005 2005-01-293010], SAE Technical Paper. pp. DOI: 10.4271/2005-01-2930. DOI: 10.4271/2005-01-2930 | Impact Statement
-- Ruff GA, Urban DL, King MK, A Research Plan for Fire Prevention, Detection, and Suppression in Crewed Exploration Systems, [2005 2005-341]. 43rd Aerospace Sciences Meeting and Exhibit, Reno, NV. | Impact Statement
+
+- Urban DL, Ruff GA, Yuan Z, Cleary T, Griffin DW, Yang J, Mulholland G, Detection of Smoke from Microgravity Fires, [2005 2005-01-293010], SAE Technical Paper. pp. DOI: 10.4271/2005-01-2930. DOI: 10.4271/2005-01-2930
+
+- Ruff GA, Urban DL, King MK, A Research Plan for Fire Prevention, Detection, and Suppression in Crewed Exploration Systems, [2005 2005-341]. 43rd Aerospace Sciences Meeting and Exhibit, Reno, NV. DOI: 10.2514/6.2005-341
+
 - Wang, J., & Ogawa, S, [2015], Effects of Meteorological Conditions on PM2.5 Concentrations in Nagasaki, Japan. Basel, Switzerland: MDPI https://www.mdpi.com/1660-4601/12/8/9089[Accessed in 25 January 2022]
+
 - Xiao-Ru Ni, Zhi-Yuan Wang, Jing-Rui Wang, Wan-Shui Yu, Shuai Chang, COMSOL 3D simulation study of the effect of metal particles on surface charge accumulation in DC GIL, 2017, COMSOL Technical Papers and Presentations. https://www.comsol.com/paper/gil-comsol-53803 [Accessed in 12 January 2022] 
+
 - James L. Reuter and Richard P. Reysa, International Space Station Environmental Control and Life Support System Design Overview Update, 1997, SAE Transactions Vol. 106, Section 1 JOURNAL OF AEROSPACE (1997), pp.627-637(11 pages)
+
 - Alex Azar, Is there an air quality standard for PM2.5 in outdoor air?, New York State Department of Health, 2018 ,Available from: https://www.health.ny.gov/environmental/indoors/air/pmq_a.htm [Accessed in 5 January 2022]
+
 - PASSANT RABIE. NASA REVEALS HOW SOLAR CYCLE 25 WILL IMPACT LIVES AND TECHNOLOGY ON EARTH. INVERSE, 2020, Available from: https://www.inverse.com/science/solar-cycle-25-nasa-explains[Accessed in 27 January 2022]
+
 - Cho, Kyunghyun; van Merrienboer, Bart; Bahdanau, DZmitry; Bengio, Yoshua, 2014,  "On the Properties of Neural Machine Translation: Encoder-Decoder Approaches". arXiv:1409.1259.
+
 - Felix Gers; Jürgen Schmidhuber; Fred Cummins, [1999],"Learning to Forget: Continual Prediction with LSTM".,1999,  Proc. ICANN'99, IEE, London. 1999: 850–855. doi:10.1049/cp:19991218. ISBN 0-85296-721-7.
+
 - "Recurrent Neural Network Tutorial, Part 4 – Implementing a GRU/LSTM RNN with Python and Theano – WildML", 2015, Wildml.com.. Retrieved May 18, 2016.
+
 - Ravanelli, Mirco; Brakel, Philemon; Omologo, Maurizio; Bengio, Yoshua, 2018, "Light Gated Recurrent Units for Speech Recognition". IEEE Transactions on Emerging Topics in Computational Intelligence. 2 (2): 92–102. arXiv:1803.10225. doi:10.1109/TETCI.2017.2762739. S2CID 4402991
+
 - Su, Yuahang; Kuo, Jay, 2019, "On extended long short-term memory and dependent bidirectional recurrent neural network". Neurocomputing. 356: 151–161. arXiv:1803.01686. doi:10.1016/j.neucom.2019.04.044. S2CID 3675055.
+
 - Chung, Junyoung; Gulcehre, Caglar; Cho, KyungHyun; Bengio, Yoshua, 2014, "Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling". arXiv:1412.3555 [cs.NE].
+
 - Gruber, N.; Jockisch, A. ,2020, "Are GRU cells more specific and LSTM cells more sensitive in motive classification of text?", Frontiers in Artificial Intelligence, 3: 40, doi:10.3389/frai.2020.00040, PMC 7861254, PMID 33733157, S2CID 220252321
+
 - Chung, Junyoung; Gulcehre, Caglar; Cho, KyungHyun; Bengio, Yoshua, 2014,."Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling". arXiv:1412.3555 [cs.NE]

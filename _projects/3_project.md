@@ -3,7 +3,8 @@ layout: page
 title: High Performance Computing with NVIDIA-RAPIDS
 description: Kozak Hou
 img: assets/img/EMNIST.png
-importance: 3
+permalink: /projects/high-performance-computing-with-nvidia-rapids/
+importance: 6
 ---
 <br>
 

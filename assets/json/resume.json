@@ -281,6 +281,14 @@
   ],
   "projects": [
     {
+      "name": "Pretrained Fourier Neural Operator for Non-Newtonian Fluid Dynamics ",
+      "summary": "Examined the performance of FNO on CAE problems, specifically in the field of non-Newtonian fluid dynamics.",
+      "highlights": ["Fourier Neural Operator", "Numerical Methods", "Computational Fluid Dynamics", "Benchmarking"],
+      "startDate": "2023-09-28",
+      "endDate": "2024-01-18",
+      "url": "https://kozakhou.github.io/Projects/"
+    },
+    {
       "name": "Regression-based Physics Informed Neural Networks for Magnetopause Tracking",
       "summary": "In this study, we propose a Regression-based Physics-Informed Neural Networks (Reg-PINNs) that combines physics-based numerical computation with vanilla machine learning. This new generation of PINNs overcomes the limitations of previous methods restricted to solving ordinary and partial differential equations by incorporating conventional empirical models to aid the convergence and enhance the generalization capability of the neural network. Compared to Shue et al. [1998], our model achieves a reduction of approximately 30% in root mean square error.",
       "highlights": ["Physics-based Machine Learning", "Magnetopause Modelling", "Benchmarking"],
@@ -327,14 +335,7 @@
       "startDate": "2022-08-01",
       "endDate": "2023-01-12",
       "url": "https://github.com/KozakHou/Image-Classification"
-    },
-    {
-      "name": "Pretrained Fourier Neural Operator for Non-Newtonian Fluid Dynamics [Confidential]",
-      "summary": "Comparing the performance of a pretrained Fourier Neural Operator with traditional numerical solver. [Confidential]",
-      "highlights": ["Fourier Neural Operator", "Numerical Methods", "Computational Fluid Dynamics", "Benchmarking"],
-      "startDate": "2023-09-28",
-      "endDate": "2024-01-18",
-      "url": "https://kozakhou.github.io/Projects/"
     }
+  
   ]
 }

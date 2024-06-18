@@ -1,6 +1,6 @@
 ---
 layout: profiles
-permalink: /People/
+permalink: /people/
 title: People
 description: Members of the leibaoinmyfamily
 nav: true
