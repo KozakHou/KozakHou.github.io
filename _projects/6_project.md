@@ -20,22 +20,22 @@ The project applies the Fourier Neural Operator (FNO) from ICLR 2021, "Fourier N
 <br>
 
 ## Fourier Neural Operator (FNO)
-Fourier Neural Operator (FNO) is a data-driven approach to solving PDEs in mapping the function in Fourier function spaces, which is infinite-dimensional, rather than finite-dimensional Euclidean spaces. The first step of the FNO model is to project the input data to high-dimensional Fourier space, then eliminate the high-frequency components and add the residual part, and finally map the data back to the original space. The mathematical formulation of the FNO model is as follows:
+Fourier Neural Operator (FNO) is a data-driven approach to solving PDEs in mapping the function in Fourier function spaces, which is infinite-dimensional, rather than finite-dimensional Euclidean spaces. The first step of the FNO model is to project the input data to high-dimensional Fourier space, then eliminate the high-frequency components and add the residual part, and finally map the data back to the original space. The FNO model is defined as:
 
-The neural network architecture is defined as:
 
-**Definition 1 (Iterative updates)** Define the update to the representation \(v_t \rightarrow v_{t+1}\) by
+
+**Definition 1 (Iterative updates)** Define the update to the representation $$v_t \rightarrow v_{t+1}$$ by
 $$
 v_{t+1}(x) := \sigma(Wv_t(x) + (K(\alpha; \phi)v_t)(x)), \quad \forall x \in D
 $$
 
-**Definition 2 (Kernel integral operator $K$)** Define the kernel integral operator mapping in (2) by
+**Definition 2 (Kernel integral operator $$K$$)** Define the kernel integral operator mapping in (2) by
 $$
 (K(\alpha; \phi)v)(x) := \int_D k(x, y, \alpha(x), \alpha(y)) \phi(v(y)) dy, \quad \forall x \in D
 $$
 
 
-**Definition 3 (Fourier integral operator $K$)** Define the Fourier integral operator
+**Definition 3 (Fourier integral operator $$K$$)** Define the Fourier integral operator
 $$
 (K(\phi)v)(x) := F^{-1}(R_{\phi} \cdot (Fv))(x), \quad \forall x \in D
 $$
