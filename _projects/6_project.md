@@ -25,17 +25,20 @@ Fourier Neural Operator (FNO) is a data-driven approach to solving PDEs in mappi
 
 
 **Definition 1 (Iterative updates)** Define the update to the representation $$v_t \rightarrow v_{t+1}$$ by
+
 $$
 v_{t+1}(x) := \sigma(Wv_t(x) + (K(\alpha; \phi)v_t)(x)), \quad \forall x \in D
 $$
 
 **Definition 2 (Kernel integral operator $$K$$)** Define the kernel integral operator mapping in (2) by
+
 $$
 (K(\alpha; \phi)v)(x) := \int_D k(x, y, \alpha(x), \alpha(y)) \phi(v(y)) dy, \quad \forall x \in D
 $$
 
 
 **Definition 3 (Fourier integral operator $$K$$)** Define the Fourier integral operator
+
 $$
 (K(\phi)v)(x) := F^{-1}(R_{\phi} \cdot (Fv))(x), \quad \forall x \in D
 $$
