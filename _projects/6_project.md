@@ -24,14 +24,20 @@ Fourier Neural Operator (FNO) is a data-driven approach to solving PDEs in mappi
 
 The neural network architecture is defined as:
 
+**Definition 1 (Iterative updates)** Define the update to the representation \(v_t \rightarrow v_{t+1}\) by
 $$
-u_{\text{net}}(\Phi; \theta) = Q_2 \circ \sigma(W_L + K_L) \circ \ldots \circ \sigma(W_1 + K_1) \circ P(\Phi), \quad \Phi = \{\phi(x) \mid x \in D\}
+v_{t+1}(x) := \sigma(Wv_t(x) + (K(\alpha; \phi)v_t)(x)), \quad \forall x \in D
 $$
 
-The kernel operation $$(K(\alpha; \phi)v_t)(x)$$ is expressed as:
-
+**Definition 2 (Kernel integral operator $K$)** Define the kernel integral operator mapping in (2) by
 $$
-(K(\alpha; \phi)v_t)(x) = \int_D \kappa(x, y, \alpha(x), \alpha(y); \phi) v_t(y) \, dy, \quad \forall x \in D
+(K(\alpha; \phi)v)(x) := \int_D k(x, y, \alpha(x), \alpha(y)) \phi(v(y)) dy, \quad \forall x \in D
+$$
+
+
+**Definition 3 (Fourier integral operator $K$)** Define the Fourier integral operator
+$$
+(K(\phi)v)(x) := F^{-1}(R_{\phi} \cdot (Fv))(x), \quad \forall x \in D
 $$
 
 The Fourier transform and its inverse are defined respectively as:
