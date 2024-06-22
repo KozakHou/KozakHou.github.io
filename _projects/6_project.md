@@ -30,7 +30,7 @@ $$
 v_{t+1}(x) := \sigma(Wv_t(x) + (K(\alpha; \phi)v_t)(x)), \quad \forall x \in D
 $$
 
-**Definition 2 (Kernel integral operator $$K$$)** Define the kernel integral operator mapping in (2) by
+**Definition 2 (Kernel integral operator $$K$$)** Define the kernel integral operator mapping by
 
 $$
 (K(\alpha; \phi)v)(x) := \int_D k(x, y, \alpha(x), \alpha(y)) \phi(v(y)) dy, \quad \forall x \in D
