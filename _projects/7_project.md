@@ -10,19 +10,20 @@ importance: 3
 
 # Parallel Computing, with applications in Quantitative Strategies
 
-## In the initial phase, we verify the installation of all required files. Following that, we conduct an in-depth analysis by applying multicore processing to a Volatility Momentum Equity Strategy. Finally, we conduct performance benchmarking using different numbers of CPU cores.
+In the initial phase, we verify the installation of all required files. Following that, we conduct an in-depth analysis by applying multicore processing to a Volatility Momentum Equity Strategy. Finally, we conduct performance benchmarking using different numbers of CPU cores.
 
+<br>
 
-## Installation Process
-### SSH to your cluster as `student`
+### Installation Process
+#### SSH to your cluster as `student`
 
-```cmd
+```
 ssh student@hpcc-cluster-[]
 ```
 
 Download the max historical data csv files for AGG and SPY, along with the 60/40 python file from the me344 cluster. Here is the command to obtain them:
 
-```cmd
+```
 scp -r [sunetid]@me344.stanford.edu:/opt/ohpc/pub/me344/project-3 .
 ```
 
@@ -34,13 +35,13 @@ Download daily data for the S&P 500 companies from Yahoo Finance, specifically f
 Copy the directory named "data" containing various files of historical equity data (obtained from the previous step) from your local computer to the HPC cluster. The destination path on the cluster should be "/home/student/data".
 Alternatively, you may simply upload the files by browsing within Jupyter and slecting the "Upload" option.
 
-```cmd
+```
 scp -r data student@hpcc-cluster-1:
 ```
 
 Change to the project-3 directory
 
-```cmd
+```
 cd project-3
 ```
 
@@ -49,7 +50,7 @@ The procedures are the same as the beginning of Project 3, except for "Install Q
 
 Install QSTrader, YFinance and Jupyter as the student user
 
-```cmd
+```
 python3 -m venv backtest
 source backtest/bin/activate
 pip install --upgrade pip
@@ -70,7 +71,7 @@ pip install matplotlib
 
 Create a Slurm script to launch Jupyter Notebook on compute-1-1. Make you are in the `$HOME/project-3` directory (command to execute is `pwd`). Name the script `jupyter_submit.slurm`:
 
-```cmd
+```
 #!/bin/bash
 #SBATCH --job-name="Jupyter"                # Job name
 #SBATCH --mail-user=[sunetid]@stanford.edu  # Email address    
@@ -87,13 +88,13 @@ hostname && jupyter-notebook --no-browser --notebook-dir=$EXEC_DIR
 
 Use the ```sbatch``` command to submit the jupyter script to Slurm (you used it in previous labs). Because you are running a Jupyter notebook, you need to collect the URL in order to connect via a web browser. Using the following command, you can obtain the URL from the Slurm job output file:
 
-```cmd
+```
 egrep -w 'compute|localhost'  slurm-*.out
 ```
 
 The output will look something like this:
 
-```cmd
+```
 ...
 slurm-103.out:compute-1-1
 slurm-103.out:[I 18:40:29.846 NotebookApp] http://localhost:8888/?token=c11be5afa5cddd73548d8ff73786291202a37868d5c18451
@@ -106,7 +107,7 @@ You can't directly access the URL being hosted on your cluster, so you need to u
 
 The following is an example of local port forwarding to interact with the Jupyter notebook hosted on compute-1-1 on your cluster (you are going to need to open a new terminal window to run this):
 
-```cmd
+```
 ssh -L 8888:localhost:8888 student@hpcc-cluster-[C] -t ssh -L 8888:localhost:8888 compute-1-1
 ```
 
@@ -296,14 +297,14 @@ tearsheet.plot_results()
 
 In this way, we have implemented Parallel Computing for the Volatility Momentum Equity Strategy and conducted benchamrking analysis for varying numbers of CPU cores.  
 
-## **Terminating Jupyter**
+#### **Terminating Jupyter**
 
 To stop local port forwarding on your computer, go to the terminal window where you entered the command enter `exit` a few times to end all sessions.
 
 To stop the Jupyter instance from running, run `squeue` on the cluster to see the jobs running. You will see output resembling this:
 
 
-```cmd
+```
 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
 105    normal  Jupyter  [user]  R       7:08      1 compute-1-1
 ```
