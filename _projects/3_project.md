@@ -4,7 +4,7 @@ title: High Performance Computing with NVIDIA-RAPIDS
 description: Kozak Hou
 img: assets/img/EMNIST.png
 permalink: /projects/high-performance-computing-with-nvidia-rapids/
-importance: 6
+importance: 7
 ---
 <br>
 
@@ -70,13 +70,19 @@ X, y = emnist.data, emnist.target
 
 ## Hyperscan Data
 
-The hyperscan data from the Japanese satellite, HIMAWARI-8, is a set of images with 16 labeled classes (9 were used in this project). The hyperscan data is used to analysis the weather conditions in Japan and Taiwan such as lonitude, latitude, temperature, humidity, precipitation, and etc. It provides a high-resolution image (2 x 2  $${km}^2$$) of the Earth's surface every 10 minutes.
+The hyperscan data from the Japanese satellite, HIMAWARI-8, is a set of images with 16 labeled classes (9 were used in this project). The hyperscan data is used to analysis the weather conditions in Japan and Taiwan such as lonitude, latitude, temperature, humidity, precipitation, and etc. It provides a high-resolution image (2 x 2  
+
+$$
+{km}^2
+$$
+
+) of the Earth's surface every 10 minutes.
 
 
 > ##### Reminder
 >
 > This project won't be able to provide the hyperscan data from the Japanese satellite, HIMAWARI-8, since it is a proprietary data needed to be authorized by JAXA (Japan Aerospace Exploration Agency). The results demonstrating in this project are dedicating to present the time consumption and performance of the RAPIDS library.
-{: .block-warning }
+> {: .block-warning }
 
 <br>
 
@@ -84,7 +90,7 @@ The hyperscan data from the Japanese satellite, HIMAWARI-8, is a set of images w
 
 #### **EMNIST Dataset**
 
-For the EMNIST dataset, I only tested it whether it can be trained by scikit-learn and cuml, and used SVM as the classifier. However, after serveral attempts, I found that <font color="#f00">the scikit-learn is not able to train the EMNIST dataset</font>. Therefore, the only results presented for the EMNIST dataset are implemented using cuml.SVM() below. For detailed implementation, you can find it [here](https://github.com/KozakHou/cuDF-and-cuML/blob/main/MNIST_EMNIST.ipynb)
+For the EMNIST dataset, I only tested it whether it can be trained by scikit-learn and cuml, and used SVM as the classifier. However, after serveral attempts, I found that `<font color="#f00">`the scikit-learn is not able to train the EMNIST dataset`</font>`. Therefore, the only results presented for the EMNIST dataset are implemented using cuml.SVM() below. For detailed implementation, you can find it [here](https://github.com/KozakHou/cuDF-and-cuML/blob/main/MNIST_EMNIST.ipynb)
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-5 mt-md-0">

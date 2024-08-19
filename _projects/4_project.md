@@ -3,7 +3,7 @@ layout: page
 title: Comparing Kalman Filter with Recurrent-based machine learning on Satellite Attitude Determination
 description: Kozak Hou, Jih-Hong Shue
 img: assets/img/KLM.jpg
-importance: 4
+importance: 5
 ---
 <br>
 
