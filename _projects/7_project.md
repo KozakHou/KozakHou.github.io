@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Comparing Kalman Filter with Recurrent-based machine learning on Satellite Attitude Determination
+title: Parallel Computing, with applications in Quantitative Strategies
 description: Anastasia Papadopoulou, Kozak Hou, William Noh
 img: assets/img/CCON.png
 importance: 3
