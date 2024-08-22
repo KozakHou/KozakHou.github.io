@@ -34,18 +34,8 @@ The workflow of the mission can be illustrated by the graph below.
 ## Objective
 
 1. Predicting results is closed to the real numerical value.
-2. The model shall be able to send warning signal if the PM 2.5 ‘s prediction over the threshold (35 
-   $$
-   \mu g/m^3
-   $$
-
-   )
-3. The model shall be able to send warning signal if the PM 0.3 ‘s prediction over the threshold (102 
-   $$
-   \#/m^3
-   $$
-
-   )
+2. The model shall be able to send warning signal if the PM 2.5 ‘s prediction over the threshold (35 $\mu g/m^3$)
+3. The model shall be able to send warning signal if the PM 0.3 ‘s prediction over the threshold (102 $\#/m^3$)
 4. The model shall be retrained once a month to accommodate space variabilities.
 5. The model can be used in environmental safety or in business.
 
@@ -96,83 +86,7 @@ $$
 \end{aligned}
 $$
 
-where 
-
-$$
-x_{t}
-$$
-
- is the input vector at time 
-$$
-t$$,
-$$
-
-h_{t}
-$$
-is the hidden state vector at time
-$$
-
-t
-$$
-,
-$$
-
-W_{z}
-$$
-,
-$$
-
-U_{z}
-$$
-,
-$$
-
-b_{z}
-$$
-,
-$$
-
-W_{r}
-$$
-,
-$$
-
-U_{r}
-$$
-,
-$$
-
-b_{r}
-$$
-,
-$$
-
-W
-$$
-,
-$$
-
-U
-$$
-,
-$$
-
-b
-$$
-are the weight matrices and bias vectors,
-$$
-
-\sigma
-$$
-is the sigmoid activation function,
-$$
-
-\tanh
-$$
-is the hyperbolic tangent activation function, and
-$$
-
-\odot$$ is the element-wise multiplication.
+where $x_{t}$ is the input vector at time $t$, $h_{t}$ is the hidden state vector at time $t$, $W_{z}$, $U_{z}$, $b_{z}$, $W_{r}$, $U_{r}$, $b_{r}$, $W$, $U$, $b$ are the weight matrices and bias vectors, $\sigma$ is the sigmoid activation function, $\tanh$ is the hyperbolic tangent activation function, and $\odot$ is the element-wise multiplication.
 
 <br>
 
@@ -211,18 +125,7 @@ The following graph shows the Model loss and prediction of PM0.3
 
 ## Conclusion
 
-In this project, we examined the feasibility of using Bi-GRU to predict the PM2.5 and PM0.3 concentration. The results show that the Bi-GRU model is able to predict the PM2.5 and PM0.3 concentration with a low RMSE. The model is able to send warning signal if the PM 2.5 ‘s prediction over the threshold (35 
-
-$$
-\mu g/m^3
-$$
-
-) and the PM 0.3 ‘s prediction over the threshold (102 
-$$
-\#/m^3
-$$
-
-). The model is retrained once a month to accommodate space variabilities to ensure the accuracy of the model acquired in the periodic space environment such as Solar Flare, Earth Rotation. In addition, we also discuss the difference between vanilla GRU and Bi-GRU, and the results show that the Bi-GRU model outperforms the vanilla GRU model in terms of RMSE.
+In this project, we examined the feasibility of using Bi-GRU to predict the PM2.5 and PM0.3 concentration. The results show that the Bi-GRU model is able to predict the PM2.5 and PM0.3 concentration with a low RMSE. The model is able to send warning signal if the PM 2.5 ‘s prediction over the threshold (35 $\mu g/m^3$) and the PM 0.3 ‘s prediction over the threshold (102 $\#/m^3$). The model is retrained once a month to accommodate space variabilities to ensure the accuracy of the model acquired in the periodic space environment such as Solar Flare, Earth Rotation. In addition, we also discuss the difference between vanilla GRU and Bi-GRU, and the results show that the Bi-GRU model outperforms the vanilla GRU model in terms of RMSE.
 
 <br>
 
