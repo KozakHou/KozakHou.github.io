@@ -47,55 +47,7 @@ Currently, there is a lack of models that can simultaneously address the aforeme
 
 ## Dataset
 
-A total of 34,998 magnetopause in-situ crossing data points were included in the analysis, derived from various sources such as THEMIS (28,634), Geo-Tail (5,764), ISEE, IMP 8, among others. For each data point, the corresponding time stamps were identified, and the 5-minute averages were calculated using the OMNI dataset recorded at five-minute intervals. In order to enable the empirical model to generalize within a specific region, we integrated the collected data from the same bin. Each bin encompasses north-south interplanetary magnetic field (IMF 
-
-$$
-Bz
-$$
-
-) values spanning across 3 values, with a shift of 1 
-
-$$
-Bz
-$$
-
- for each subsequent bin. Additionally, each bin includes 2 values of solar wind dynamic pressure (S
-
-$$
-Dp
-$$
-
-), with a shift of 0.5 
-
-$$
-Dp
-$$
-
- for each subsequent bin. The range of the dataset used in this study is consistent with that of Shue et al. [1998], which is -18 < 
-
-$$
-Bz
-$$
-
- < 15 and 0.5 < 
-
-$$
-Dp
-$$
-
- < 8.5. Figure 1i displays the distribution of X-GSM and Y-GSM coordinates in the GSM coordinate system for the Geo-Tail data. On the other hand, Figure 2 illustrates the range of distribution for
-
-$$
-Dp
-$$
-
- and
-
-$$
-Bz
-$$
-
- variables.
+A total of 34,998 magnetopause in-situ crossing data points were included in the analysis, derived from various sources such as THEMIS (28,634), Geo-Tail (5,764), ISEE, IMP 8, among others. For each data point, the corresponding time stamps were identified, and the 5-minute averages were calculated using the OMNI dataset recorded at five-minute intervals. In order to enable the empirical model to generalize within a specific region, we integrated the collected data from the same bin. Each bin encompasses north-south interplanetary magnetic field (IMF $$Bz$$) values spanning across 3 values, with a shift of 1 $$Bz$$ for each subsequent bin. Additionally, each bin includes 2 values of solar wind dynamic pressure ($$Dp$$), with a shift of 0.5 $$Dp$$ for each subsequent bin. The range of the dataset used in this study is consistent with that of Shue et al. [1998], which is -18 nT < $$Bz$$< 15 nT and 0.5 nPa < $$Dp$$ < 8.5 nPa. Figure 1i displays the distribution of X-GSM and Y-GSM coordinates in the GSM coordinate system for the Geo-Tail data. On the other hand, Figure 2 illustrates the range of distribution for $$Dp$$ and $$Bz$$ variables.
 
 `<br>`
 
@@ -284,23 +236,7 @@ $$
 
 <br>
 
-We then investigate the ability of the models to handle stronger 
-
-$$
-Bz
-$$
-
- values and their sensitivity to the north-south interplanetary magnetic field. In the above figure, it is observed that all types of neural network models perform well when 
-$$
-Bz
-$$
-
- < 10. However, as the northward interplanetary magnetic field strength increases, the NN model exhibits significant errors, while Reg-PINN, guided by the empirical formula, maintains low errors even at 
-$$
-Bz
-$$
-
- > 10. Overall, Reg-PINN performs the best in this scenario.
+We then investigate the ability of the models to handle stronger $$Bz$$ values and their sensitivity to the north-south interplanetary magnetic field. In the above figure, it is observed that all types of neural network models perform well when $$Bz$$ < 10 nT. However, as the northward interplanetary magnetic field strength increases, the NN model exhibits significant errors, while Reg-PINN, guided by the empirical formula, maintains low errors even at $$Bz$$ > 10 nT. Overall, Reg-PINN performs the best in this scenario.
 
 <br>
 
@@ -315,66 +251,13 @@ $$
 
 <br>
 
-We aim to explore the errors of various models under different solar wind dynamic pressures (
-
-$$
-Dp
-$$
-
- < 3, 3 ≤ 
-$$
-Dp
-$$
-
- ≤ 5, 
-$$
-Dp
-$$
-
- > 5). It is evident that as Dp increases, the errors of neural network models also increase. Although they perform reasonably well for 
-$$
-Dp
-$$
-
- < 5, only PINN + 
-$$
-L_1
-$$
-
- regularization can compete with Shue et al. [1998] when 
-$$
-Dp
-$$
-
- > 5
+We aim to explore the errors of various models under different solar wind dynamic pressures ($$Dp$$ < 3 nPa, 3 nPa ≤ $$Dp$$ ≤ 5 nPa, $$Dp$$> 5 nPa). It is evident that as Dp increases, the errors of neural network models also increase. Although they perform reasonably well for $$Dp$$ < 5 nPa, only PINN + $$L_1$$ regularization can compete with Shue et al. [1998] when $$Dp$$ > 5
 
 <br>
 
 ## Conclusion
 
-- We re-evaluate the relationship between parameters (
-
-  $$
-  Bz
-  $$
-
-  , 
-
-  $$
-  Dp
-  $$
-
-  ) and 
-  $$
-  r_0
-  $$
-
-    and 
-  $$
-  \alpha
-  $$
-
-  , and propose alternative types of numerical models.
+- We re-evaluate the relationship between parameters ($$Bz$$, $$Dp$$) and $$r_0$$ and $$\alpha$$, and propose alternative types of numerical models.
 - The proposed algorithm (Reg-PINNs) resolves the issues of numerical methods' inherent lack of precision and the poor generalization capabilities of machine learning.
 - Reg-PINNs is an algorithm that constrains vanilla neural networks to converge on predictions and enhances generalization by excluding intervening outliers.
 - Reg – PINNs is capable of handling multivariate input and multivariate output. However, in this study, we only focus on discussing the prediction of magnetopause locations in the space domain, considering multivariate inputs and a single output.
