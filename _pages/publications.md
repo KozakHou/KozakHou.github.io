@@ -8,10 +8,7 @@ display_categories: [In Progress, Published]
 ---
 ### In Progress
 
-* Hou, P.-H.,Lin, C. -Y., Shue, J.-H. Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking. (Source: https://github.com/KozakHou/Reg-PINNs)
-
-<br>
-<br>
+* (Submitted) Hou, P.-H and Hsieh, S.-C. (2025) Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking, International Conference on Scientific Computing and Machine Learning 2025. Manuscript is available at: https://arxiv.org/abs/2306.09621
 
 ### Published
 
