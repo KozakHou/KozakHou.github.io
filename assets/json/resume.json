@@ -170,6 +170,13 @@
   ],
   "publications": [
     {
+      "name": "(Submitted) Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking",
+      "publisher": "International Conference on Scientific Computing and Machine Learning 2025 (SCML2025)",
+      "releaseDate": "2024-11-25",
+      "url": "https://arxiv.org/abs/2306.09621",
+      "summary": "Previous research in the scientific field has utilized statistical empirical models and machine learning to address fitting challenges. While empirical models have the advantage of numerical generalization, they often sacrifice accuracy. However, conventional machine learning methods can achieve high precision but may lack the desired generalization. The article introduces a Regression-based Physics Informed Neural Networks (Reg-PINNs), which embeds physics-inspired empirical models into the neural network’s loss function, thereby combining the benefits of generalization and high accuracy. The study validates the proposed method using the magnetopause boundary location as the target and explores the feasibility of methods including Shue et al. [1998], a data overfitting model, a fully-connected networks, Reg-PINNs with Shue’s model, and Reg-PINNs with the overfitting model. Compared to Shue’s model, this technique achieves approximately a 30% reduction in RMSE, presenting a proof-of-concept improved solution for the scientific community."
+    },
+    {
       "name": "Utilizing Pop-Up Platform on the CubeSat to Achieve Commercial Activities in the Universe (UCCU)",
       "publisher": "International Conference on Astronautics and Space Exploration (iCASE)",
       "releaseDate": "2021-11-16",
@@ -266,7 +273,8 @@
     {
       "name": "Doctor Chun-Yu (Chris) Lin",
       "icon": "fa-solid fa-star",
-      "reference": "Associate Researcher at National Center for High-performance Computing, National Applied Research Laboratories, Taiwan."
+      "reference": "Associate Researcher at National Center for High-performance Computing, National Applied Research Laboratories, Taiwan.",
+      "Letter of Recommendation": "PoHan.pdf"
     },
     {
       "name": "Professor Jih-Hong Shue",
