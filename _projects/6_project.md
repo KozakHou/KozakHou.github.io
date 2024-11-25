@@ -3,6 +3,7 @@ layout: page
 title: Pretrained Fourier Neural Operator for Non-Newtonian Fluid Dynamics
 description: Kozak Hou, Yi-Che Hsieh
 img: assets/img/cae.jpg
+permalink: projects/pretrained-fourier-neural-operator-for-non-newtonian-fluid-dynamics/
 importance: 1
 ---
 
