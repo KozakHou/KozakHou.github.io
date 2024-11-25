@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Kozak (Po-Han) Hou",
-    "label": "Master's Student",
+    "name": "Po-Han (Kozak) Hou",
+    "label": "MSc Student in Applied Computational Science and Engineering",
     "image": "",
-    "email": "kh124@ic.ac.uk",
-    "phone": "(886) 905-804-898",
+    "email": "pohan.hou24@imperial.ac.uk",
+    "phone": "(44) 7719710593",
     "url": "https://KozakHou.github.io",
     "summary": "My primary research work lies in neural network architecture reconstruction and configuration, applying real-world problems and physics phenomena to it.",
     "location": {
       "address": "Exibition Road",
-      "postalCode": "SW7 2AZ",
+      "postalCode": "SW7 2FA",
       "city": "South Kensington",
       "countryCode": "UK",
       "region": "London"
