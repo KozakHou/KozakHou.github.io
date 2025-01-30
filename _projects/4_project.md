@@ -101,7 +101,7 @@ The dataset used for this project is credited to the 3U CubeSat - ([IDEASSat/INS
 
 <br>
 
-In addition, we also use the [System Tool Kit (STK)](https://www.ansys.com/products/missions/ansys-stk) to simulate the IDEASSat in the ECEF coordinate system. The following image shows the ECEF Velocity - Xaxis of the IDEASSat simulated by STK with the same time period as the dataset.
+In addition, we also use the *Ansys-STK* to simulate the IDEASSat in the ECEF coordinate system. The following image shows the ECEF Velocity - Xaxis of the IDEASSat simulated by STK with the same time period as the dataset.
 
 
 <div class="row justify-content-sm-center">
