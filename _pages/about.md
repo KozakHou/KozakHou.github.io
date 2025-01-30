@@ -7,7 +7,7 @@ nav_order: 1
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: me.png
   image_circular: False # crops the image to make it circular
   more_info: >
 
