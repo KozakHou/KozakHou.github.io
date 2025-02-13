@@ -14,6 +14,8 @@ display_categories: [In Progress, Published]
 
 * (Accepted for Oral Presentation) Hou, P.-H and Hsieh, S.-C. (2025) Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking, International Conference on Scientific Computing and Machine Learning 2025. Manuscript is available at: https://arxiv.org/abs/2306.09621
 
+<br>
+
 ### Published
 
 * Hou, P.-H., Lin, W.-C., Hou, H.-C., Huang, Y.-H., Shue, J.-H. (2022) Automatic Emergency Dust-Free solution on-board International Space Station with Bi-GRU (AED-ISS), arXiv:2210.08549. Available at: https://doi.org/10.48550/arXiv.2210.08549.
