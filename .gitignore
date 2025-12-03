@@ -11,3 +11,17 @@ assets/libs/
 node_modules/
 vendor
 .idea
+final-report-src/kh124-final-report.pdf
+final-report-src/kh124-final-report.tex
+final-report-src/references.bib
+final-report-src/figures/Imperial.png
+final-report-src/figures/Part2_Plot.png
+final-report-src/figures/Part3_Plot.png
+final-report-src/figures/Part4_Plot.png
+final-report-src/figures/rec_epoch_198.jpg
+final-report-src/figures/rec_model_input.png
+final-report-src/figures/rec_model_output.png
+final-report-src/figures/rectangular_domain.png
+final-report-src/figures/tst2_geometry.png
+final-report-src/figures/tst2_model_input.png
+final-report-src/figures/tst2_model_output.png
