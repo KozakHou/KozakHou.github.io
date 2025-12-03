@@ -6,6 +6,7 @@ img: assets/img/TST2.jpeg
 importance: 1
 category: work
 related_publications: true
+math: true
 ---
 
 <div class="row">
@@ -23,9 +24,9 @@ Numerical simulation is indispensable for optimizing input parameters and minimi
 
 ## Introduction
 
-Fusion energy represents a compelling solution for achieving clean and sustainable power, requiring plasma temperatures around $$10^8$$ K to overcome the Coulomb barrier that exists between atomic nuclei. There are several approaches of heating techniques inside the tokamak, such as Ohmic Heating, Neutral Beam Injection, Magnetic Induction Heating, and, in this case, Radio Frequency heating, have been devised for application in the TST-2 spherical tokamak to attain these specific conditions. Accurate numerical simulations are essential for predicting plasma behavior and electric field distributions, reducing the need for costly experimental trials.
+Fusion energy represents a compelling solution for achieving clean and sustainable power, requiring plasma temperatures around $10^8$ K to overcome the Coulomb barrier that exists between atomic nuclei. There are several approaches of heating techniques inside the tokamak, such as Ohmic Heating, Neutral Beam Injection, Magnetic Induction Heating, and, in this case, Radio Frequency heating, have been devised for application in the TST-2 spherical tokamak to attain these specific conditions. Accurate numerical simulations are essential for predicting plasma behavior and electric field distributions, reducing the need for costly experimental trials.
 
-For plasma wave modeling, traditional numerical methods such as Finite Element Methods (FEM) and the Spectral code are widely acknowledged. The major advantage for Spectral Methods is transforming the wave equations into multiplicative operations in Fourier space but struggling with arbitrary geometries due to their reliance on global basis functions, making it inefficient for non-rectangular geometry. FEM, however, offers flexibility in the meshing of irregular domains but faces challenges in establishing stable solvers for non-local plasma response. With advances in high-performance computing, these methods have become more computationally feasible in a limited time. Recently, deep learning models, particularly Physics-Informed Neural Networks (PINNs), have emerged as surrogate solvers for conventional large-scale solver, accelerating simulations like Reynolds-Averaged Navier-Stokes and Direct Numerical Simulation by orders of magnitude $$10^5$$ while maintaining reliability via integrating partial differential equations (PDEs) into the learning process to enhance generalizability and robustness.
+For plasma wave modeling, traditional numerical methods such as Finite Element Methods (FEM) and the Spectral code are widely acknowledged. The major advantage for Spectral Methods is transforming the wave equations into multiplicative operations in Fourier space but struggling with arbitrary geometries due to their reliance on global basis functions, making it inefficient for non-rectangular geometry. FEM, however, offers flexibility in the meshing of irregular domains but faces challenges in establishing stable solvers for non-local plasma response. With advances in high-performance computing, these methods have become more computationally feasible in a limited time. Recently, deep learning models, particularly Physics-Informed Neural Networks (PINNs), have emerged as surrogate solvers for conventional large-scale solver, accelerating simulations like Reynolds-Averaged Navier-Stokes and Direct Numerical Simulation by orders of magnitude $10^5$ while maintaining reliability via integrating partial differential equations (PDEs) into the learning process to enhance generalizability and robustness.
 
 The study develops and evaluates four deep learning models: ConvNet, UNet, Fourier Neural Operator (FNO), and Geometry-aware FNO (Geo-FNO), which uses the plasma wave equation as the governing model, with a ConvNet as the baseline. The models are exercised in a rectangular domain, with the expansion to the TST-2 geometry, in order to capture the underlying electric field structures launched by radio frequency waves. These field structures are pivotal in accelerating fast electrons and facilitating non-inductive current in tokamak plasmas, both of which are essential for effective heating and sustained operation in the fusion device.
 
@@ -37,7 +38,7 @@ $$
 \nabla \times \nabla \times \mathbf{E} - \frac{\omega^2}{c^2} \mathbf{K} \mathbf{E} = 0
 $$
 
-where $$\mathbf{E}$$ is the electric field, $$\omega$$ is the wave frequency, $$c$$ is the speed of light, and $$\mathbf{K}$$ is the cold plasma dielectric tensor.
+where $\mathbf{E}$ is the electric field, $\omega$ is the wave frequency, $c$ is the speed of light, and $\mathbf{K}$ is the cold plasma dielectric tensor.
 
 The widely acknowledged full-wave solver for fusion devices is the All Order Spectral Algorithm (AORSA). However, its computational cost is prohibitively high that generating a single output with a specific parameter set and adaptive high-resolution meshing required approximately 1792 CPU hours. Given the limited timeframe of this study, the simulations were instead conducted under the electrostatic approximation for the lower-hybrid wave. This allowed for validation of the proposed approaches on homogeneous grids with significantly reduced computational overhead.
 
@@ -49,7 +50,7 @@ $$
 \mathbf{E} = -\nabla \Phi
 $$
 
-Assuming no free charge ($$\nabla \cdot \mathbf{D} = \rho_f = 0$$) and using $$\mathbf{D} = \mathbf{K} \mathbf{E}$$, the cold plasma dielectric tensor $$\mathbf{K}$$ is:
+Assuming no free charge ($\nabla \cdot \mathbf{D} = \rho_f = 0$) and using $\mathbf{D} = \mathbf{K} \mathbf{E}$, the cold plasma dielectric tensor $\mathbf{K}$ is:
 
 $$
 \mathbf{K} =
@@ -60,7 +61,7 @@ S & iD & 0 \\
 \end{bmatrix}
 $$
 
-where $$S, D, P$$ in $$\mathbf{K}$$ are Stix parameters and $$\mathbf{D}$$ is the electric displacement field.
+where $S, D, P$ in $\mathbf{K}$ are Stix parameters and $\mathbf{D}$ is the electric displacement field.
 
 The electrostatic dispersion relation can be computed as:
 
@@ -78,21 +79,21 @@ P &= 1 - \sum_s \frac{\omega_{ps}^2}{\omega^2}
 \end{align}
 $$
 
-where $$\omega_{ps}$$ and $$\omega_{cs}$$ are the plasma and cyclotron frequencies for species $$s$$, respectively.
+where $\omega_{ps}$ and $\omega_{cs}$ are the plasma and cyclotron frequencies for species $s$, respectively.
 
-To account for the electron Landau damping effect along the magnetic field, the $$P$$ component is modified:
+To account for the electron Landau damping effect along the magnetic field, the $P$ component is modified:
 
 $$
 \tilde{P} = 1 - \sum_s \frac{\omega_{ps}^2}{\omega^2} \zeta^2 Z'(\zeta)
 $$
 
-where $$\zeta = \frac{\omega}{k_\parallel v_{th,e}}$$, $$Z'(\zeta) = -2 \left(1 + \zeta Z(\zeta)\right)$$, and the plasma dispersion function is:
+where $\zeta = \frac{\omega}{k_\parallel v_{th,e}}$, $Z'(\zeta) = -2 \left(1 + \zeta Z(\zeta)\right)$, and the plasma dispersion function is:
 
 $$
 Z(\zeta) = \frac{1}{\sqrt{\pi}} \int_{-\infty}^{\infty} \frac{e^{-z^2}}{z - \zeta} \, dz, \quad \text{Im}(\zeta) > 0
 $$
 
-Here, $$v_{th,e}$$ is the electron thermal velocity, and $$k_\parallel$$ is the wavevector component parallel to the magnetic field.
+Here, $v_{th,e}$ is the electron thermal velocity, and $k_\parallel$ is the wavevector component parallel to the magnetic field.
 
 ## Simulation Setup
 
@@ -102,10 +103,10 @@ The numerical solver employed in the research is a hybrid approach that combines
 
 | Parameter | Value | Unit |
 |:---|:---:|:---:|
-| Target plasma density | $$5 \times 10^{16}$$ -- $$1 \times 10^{18}$$ | m$$^{-3}$$ |
+| Target plasma density | $5 \times 10^{16}$ -- $1 \times 10^{18}$ | m$^{-3}$ |
 | Plasma temperature | 5 -- 100 | eV |
 | Toroidal magnetic field | 0.1 -- 0.2 | T |
-| Plasma current | $$< 30$$ | kA |
+| Plasma current | $< 30$ | kA |
 | Major radius | 0.36 | m |
 | Minor radius | 0.23 | m |
 | LH wave frequency | 200 | MHz |
@@ -125,11 +126,11 @@ The numerical solver employed in the research is a hybrid approach that combines
 
 ### Rectangular Domain
 
-The computational domain is defined on a 2D rectangular grid on the $$ZX$$-plane ($$Z \in [-3, 3]$$, $$X \in [0, 0.46]$$) with a $$288 \times 288$$ homogeneous grid. The $$Z$$-axis is horizontal, the $$X$$-axis is vertical, and the $$Y$$-axis (into the page) is neglected. The background magnetic field ($$B_0$$) is homogeneous and oriented along the $$z$$-axis. Plasma characteristics, including density ($$n$$) and temperature ($$T$$), are assumed to be flux functions. Periodic boundary conditions are implemented along $$Z$$ at $$Z = \pm 3$$ to mimic the circular geometry of the TST-2, with a boundary electric field launched at $$x = 0$$.
+The computational domain is defined on a 2D rectangular grid on the $ZX$-plane ($Z \in [-3, 3]$, $X \in [0, 0.46]$) with a $288 \times 288$ homogeneous grid. The $Z$-axis is horizontal, the $X$-axis is vertical, and the $Y$-axis (into the page) is neglected. The background magnetic field ($B_0$) is homogeneous and oriented along the $z$-axis. Plasma characteristics, including density ($n$) and temperature ($T$), are assumed to be flux functions. Periodic boundary conditions are implemented along $Z$ at $Z = \pm 3$ to mimic the circular geometry of the TST-2, with a boundary electric field launched at $x = 0$.
 
 ### TST-2 Geometry
 
-A 2D top-down projection in the $$XY$$-plane is used to represent the TST-2 domain geometry with a $$512 \times 512$$ homogeneous grid. The simulation is done in cylindrical coordinates for the inner wall at R = 0.13 (m) and outer wall at R = 0.59 (m) with azimuth angle ($$\phi$$). The wave is launched from the outer boundary and propagates into the plasma medium.
+A 2D top-down projection in the $XY$-plane is used to represent the TST-2 domain geometry with a $512 \times 512$ homogeneous grid. The simulation is done in cylindrical coordinates for the inner wall at R = 0.13 (m) and outer wall at R = 0.59 (m) with azimuth angle ($\phi$). The wave is launched from the outer boundary and propagates into the plasma medium.
 
 ## Methodologies
 
@@ -145,7 +146,7 @@ Although FNO statistically achieves good accuracy and accelerates inference comp
 
 ### Loss function and Physics-Informed Operation
 
-To train the artificial neural network, the objective function, or called total loss function $$(\mathcal{L}_{\text{total}})$$ consisting of a MSE loss $$(\mathcal{L}_{\text{mse}})$$, spectral loss $$(\mathcal{L}_{\text{spectral}})$$, boundary condition loss $$(\mathcal{L}_{\text{boundary}})$$, and the residual physics-informed loss $$(\mathcal{L}_{\text{physics}})$$:
+To train the artificial neural network, the objective function, or called total loss function $(\mathcal{L}_{\text{total}})$ consisting of a MSE loss $(\mathcal{L}_{\text{mse}})$, spectral loss $(\mathcal{L}_{\text{spectral}})$, boundary condition loss $(\mathcal{L}_{\text{boundary}})$, and the residual physics-informed loss $(\mathcal{L}_{\text{physics}})$:
 
 $$
 \mathcal{L}_{\text{total}} = \lambda_{\text{mse}}\mathcal{L}_{\text{mse}} + \lambda_{\text{spectral}}\mathcal{L}_{\text{spectral}} + \lambda_{\text{boundary}}\mathcal{L}_{\text{boundary}} + \lambda_{\text{physics} }\mathcal{L}_{\text{physics}}
@@ -159,7 +160,7 @@ The experiment is conducted in four parts with varying loss weights as shown in 
 
 **Table 2: Loss function weights for each part of the experiment**
 
-| Task | $$\mathcal{\lambda}_{\text{mse}}$$ | $$\mathcal{\lambda}_{\text{spectral}}$$ | $$\mathcal{\lambda}_{\text{boundary}}$$ | $$\mathcal{\lambda}_{\text{physics}}$$ |
+| Task | $\mathcal{\lambda}_{\text{mse}}$ | $\mathcal{\lambda}_{\text{spectral}}$ | $\mathcal{\lambda}_{\text{boundary}}$ | $\mathcal{\lambda}_{\text{physics}}$ |
 |:---|:---:|:---:|:---:|:---:|
 | Part 1 | 1 | 0.01 | 0.1 | 0.01 |
 | Part 2 | 1 | 0.01 | 0.1 | 0 |
@@ -205,7 +206,7 @@ When incorporating physics loss (Part 3), Geo-FNO yields reasonably satisfactory
 
 ### Overall Evaluation
 
-The study demonstrates that introducing too large a weight to the physics-informed loss term may not necessarily be an ideal solution. FNO achieves notably faster inference compared to UNet due to the $$\mathcal{O}(N\log N)$$ complexity of FFT-based spectral convolutions. Additionally, Geo-FNO introduces a simple multi-layer perceptron (MLP) to generalize arbitrary geometry into a 2D rectangular domain in the latent space, making the spectral convolution more effectively trainable.
+The study demonstrates that introducing too large a weight to the physics-informed loss term may not necessarily be an ideal solution. FNO achieves notably faster inference compared to UNet due to the $\mathcal{O}(N\log N)$ complexity of FFT-based spectral convolutions. Additionally, Geo-FNO introduces a simple multi-layer perceptron (MLP) to generalize arbitrary geometry into a 2D rectangular domain in the latent space, making the spectral convolution more effectively trainable.
 
 **Table 3: Benchmark table for different sets of loss weights**
 
@@ -220,11 +221,11 @@ The study demonstrates that introducing too large a weight to the physics-inform
 
 | Model | Average Inference Time (ms) | Memory Footprint (MB) | Params |
 |:---|:---:|:---:|:---:|
-| Spectral-FDM solver | $$482 \pm 17$$ | 20.2 (CPU) | - |
-| ConvNet (baseline) | $$3.26 \pm 0.02$$ (147.8x) | 158.39 | 93,922 |
-| UNet | $$7.25 \pm 0.11$$ (66.5x) | 141.00 | 483,042 |
-| FNO | $$3.68 \pm 0.04$$ (130.9x) | 294.00 | 465,546 |
-| Geo-FNO | $$18.68 \pm 0.03$$ (25.8x) | 498.00 | 481,626 |
+| Spectral-FDM solver | $482 \pm 17$ | 20.2 (CPU) | - |
+| ConvNet (baseline) | $3.26 \pm 0.02$ (147.8x) | 158.39 | 93,922 |
+| UNet | $7.25 \pm 0.11$ (66.5x) | 141.00 | 483,042 |
+| FNO | $3.68 \pm 0.04$ (130.9x) | 294.00 | 465,546 |
+| Geo-FNO | $18.68 \pm 0.03$ (25.8x) | 498.00 | 481,626 |
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -246,7 +247,6 @@ Building on these features, the next phase will extend the framework to fully el
 The author would like to express his deepest gratitude to Dr. Naoto Tsujii from the University of Tokyo for his generous remote guidance on the theoretical foundation of this work and for providing valuable parameters and fruitful discussions related to the TST-2 spherical tokamak. Sincere thanks are also extended to Dr. Adriana Paluszny for her guidance on scientific writing and supervision on the overall project timeline through weekly stand-up meetings. The author acknowledges Mr. Rayan Khan from the Imperial College Remote Computing Service (RCS) for granting PBS job priority access, and Dr. Marijan Beg and Mr. Francois Schalkwyk from the Department of Earth Science and Engineering – BORG Computing Team for their timely support of departmental A100 GPU resources during periods of high demand on RCS's GPU resources.
 
 Special thanks to Mr. Koshi Yoshida, Mr. Suebsak Suksaengpanomrung and Mr. Tang Zhexuan from the Ejili–Tsujii Laboratory at the University of Tokyo for their warm introduction to the TST-2 operations during the author's visit and to Mr. En-Rui Chang from Liscotech System Co., Ltd. for valuable discussions on antenna design and operation.
-
 
 ## References
 
