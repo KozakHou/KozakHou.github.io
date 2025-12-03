@@ -3,7 +3,7 @@ layout: page
 title: Parallel Computing, with applications in Quantitative Strategies
 description: Anastasia Papadopoulou, Kozak Hou, William Noh
 img: assets/img/CCON.png
-importance: 3
+importance: 4
 permalink: projects/parallel-computing-with-applications-in-quantitative-strategies/
 ---
 

@@ -4,7 +4,7 @@ title: Numerical Methods and Physics Informed Neural Networks in Advection Funct
 description: Kozak Hou
 img: assets/img/adv.png
 permalink: projects/numerical-methods-and-pinn-in-advection-function/
-importance: 4
+importance: 5
 ---
 <br>
 

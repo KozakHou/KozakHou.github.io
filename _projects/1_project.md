@@ -4,7 +4,7 @@ title: Regression-based Physics Informed Nueral Networks for Magentopause Tracki
 description: Kozak Hou, Sung-Chi Hsieh, Chun-Yu Lin, Jih-Hong Shue
 img: assets/img/mag.jpg
 permalink: /projects/regression-based-physics-informed-neural-networks-for-magentopause-tracking/
-importance: 2
+importance: 3
 ---
 <br>
 

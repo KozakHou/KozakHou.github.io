@@ -4,7 +4,7 @@ title: High Performance Computing with NVIDIA-RAPIDS
 description: Kozak Hou
 img: assets/img/EMNIST.png
 permalink: /projects/high-performance-computing-with-nvidia-rapids/
-importance: 7
+importance: 8
 ---
 <br>
 
@@ -145,5 +145,4 @@ It is evidently that the RAPIDS shows a significant improvement in the time cons
 
 - [RAPIDS](https://rapids.ai/)
 - [EMNIST](https://www.nist.gov/itl/iad/image-group/emnist-dataset)
-- [HIMAWARI-8](https://www.data.jma.go.jp/mscweb/en/himawari89/)
 - [JAXA](https://www.jaxa.jp/)
