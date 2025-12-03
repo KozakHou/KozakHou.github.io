@@ -13,8 +13,6 @@
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
     {% include head.liquid %}
-    <!-- Include the necessary CSS for Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   </head>
 
   <!-- Body -->
@@ -77,10 +75,6 @@
             </h2>
             {% include selected_papers.liquid %}
           {% endif %}
-
-          <!-- GeoJSON Map -->
-          <h3>Location</h3>
-          <div id="map" style="height: 500px; margin: 20px 0;"></div>
         </article>
       </div>
     </div>
@@ -128,56 +122,5 @@
     {% include scripts/back_to_top.liquid %}
     {% include scripts/search.liquid %}
     <script src="{{ '/assets/js/shortcut-key.js' | relative_url }}"></script>
-    <!-- Include the necessary JS for Leaflet -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var map = L.map('map').setView([51.497455, -0.176049], 15);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        var geojsonData = {
-          "type": "FeatureCollection",
-          "features": [
-            {
-              "type": "Feature",
-              "properties": {},
-              "geometry": {
-                "coordinates": [
-                  [
-                    [
-                      -0.18000557446279686,
-                      51.501383124668735
-                    ],
-                    [
-                      -0.1787411873808935,
-                      51.495425667164454
-                    ],
-                    [
-                      -0.17356013677778037,
-                      51.49588273612517
-                    ],
-                    [
-                      -0.1747225571598392,
-                      51.501675103448804
-                    ],
-                    [
-                      -0.18000557446279686,
-                      51.501383124668735
-                    ]
-                  ]
-                ],
-                "type": "Polygon"
-              }
-            }
-          ]
-        };
-
-        L.geoJSON(geojsonData).addTo(map);
-      });
-    </script>
   </body>
 </html>
