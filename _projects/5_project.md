@@ -5,6 +5,7 @@ description: Kozak Hou, Wei-Chih Lin, Hong-Chun Hou, Yu-Hao Huang, Jih-Hong Shue
 img: assets/img/AED.jpg
 permalink: /projects/automatic-emergency-dust-free-solution-on-board-international-space-station-with-bi-gru/
 importance: 7
+math: true
 ---
 <br>
 

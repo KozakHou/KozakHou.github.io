@@ -5,6 +5,7 @@ description: Kozak Hou, Sung-Chi Hsieh, Chun-Yu Lin, Jih-Hong Shue
 img: assets/img/mag.jpg
 permalink: /projects/regression-based-physics-informed-neural-networks-for-magentopause-tracking/
 importance: 3
+math: true
 ---
 <br>
 

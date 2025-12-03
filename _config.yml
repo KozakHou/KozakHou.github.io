@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Kozak
 middle_name: 
 last_name: Hou
-email: kh124@ic.ac.uk
+email: kozak20010716@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -109,7 +109,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  Contact: kh124@ic.ac.uk
+  Contact: kozak20010716@gmail.com
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

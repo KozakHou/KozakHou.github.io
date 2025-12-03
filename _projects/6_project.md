@@ -5,6 +5,7 @@ description: Kozak Hou, Yi-Che Hsieh
 img: assets/img/cae.jpg
 permalink: projects/pretrained-fourier-neural-operator-for-non-newtonian-fluid-dynamics/
 importance: 2
+math: true
 ---
 
 > ##### Disclaimer

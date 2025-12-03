@@ -5,6 +5,7 @@ description: Kozak Hou, Jih-Hong Shue
 permalink: projects/Kalman-Filter-RecurrentML-ADCS/
 img: assets/img/KLM.jpg
 importance: 6
+math: true
 ---
 <br>
 

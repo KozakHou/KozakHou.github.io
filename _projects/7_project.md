@@ -5,6 +5,7 @@ description: Anastasia Papadopoulou, Kozak Hou, William Noh
 img: assets/img/CCON.png
 importance: 4
 permalink: projects/parallel-computing-with-applications-in-quantitative-strategies/
+math: true
 ---
 
 <br>

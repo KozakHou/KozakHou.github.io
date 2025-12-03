@@ -5,6 +5,7 @@ description: Kozak Hou
 img: assets/img/EMNIST.png
 permalink: /projects/high-performance-computing-with-nvidia-rapids/
 importance: 8
+math: true
 ---
 <br>
 

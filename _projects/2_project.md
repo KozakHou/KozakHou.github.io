@@ -5,6 +5,7 @@ description: Kozak Hou
 img: assets/img/adv.png
 permalink: projects/numerical-methods-and-pinn-in-advection-function/
 importance: 5
+math: true
 ---
 <br>
 
