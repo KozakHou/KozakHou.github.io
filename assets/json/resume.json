@@ -74,6 +74,17 @@
   ],
   "education": [
     {
+      "institution": "University of Tokyo, Chiba, Japan",
+      "location": "Chiba, Japan",
+      "url": "https://www.u-tokyo.ac.jp/en/",
+      "area": "Nuclear Fusion Research",
+      "studyType": "Research Student",
+      "startDate": "2026-10-01",
+      "endDate": "",
+      "GPA": " / ",
+      "courses": []
+    },
+    {
       "institution": "Natioanl Central University, Taoyuan, Taiwan",
       "location": "Taoyuan, Taiwan",
       "url": "https://www.ncu.edu.tw/tw/",
@@ -104,7 +115,7 @@
       "startDate": "2024-09-28",
       "endDate": "2025-09-28",
       "GPA": " / ",
-      "courses": ["Software Engineering", "Optimization & Inversion", "Parallel Computing", "Computational Math"]
+      "courses": ["Software Pattern and Development", "Optimization and Inversion", "Patterns for Parallel Programming", "Modelling and Numerical Methods"]
     }
     
   ],
@@ -289,12 +300,20 @@
   ],
   "projects": [
     {
+      "name": "Physics-based Machine Learning Scheme for Accelerating Simulation of 2D Lower-Hybrid Wave on TST-2 Spherical Tokamak",
+      "summary": "Developed a hybrid machine learning approach to model plasma wave propagation using Fourier Neural Operator (FNO) and Geometry-aware FNO models within a Physics-Informed Neural Operator framework. The proposed simulation scheme demonstrates a 281.8x acceleration in inference time in the rectangular domain and a 25.8x acceleration in the TST-2 circular geometry while maintaining reliability, offering potential for real-time monitoring of wave structures and efficient selection of launching parameters for fusion start-up.",
+      "highlights": ["Fourier Neural Operator", "Physics-Informed Neural Networks", "Plasma Physics", "Computational Science", "Fusion Energy"],
+      "startDate": "2025-02-12",
+      "endDate": "2025-09-13",
+      "url": "https://kozakhou.github.io/projects/tst2_project/"
+    },
+    {
       "name": "Pretrained Fourier Neural Operator for Non-Newtonian Fluid Dynamics ",
       "summary": "Examined the performance of FNO on CAE problems, specifically in the field of non-Newtonian fluid dynamics.",
       "highlights": ["Fourier Neural Operator", "Numerical Methods", "Computational Fluid Dynamics", "Benchmarking"],
       "startDate": "2023-09-28",
       "endDate": "2024-01-18",
-      "url": "https://kozakhou.github.io/Projects/"
+      "url": "https://kozakhou.github.io/projects/pretrained-fourier-neural-operator-for-non-newtonian-fluid-dynamics/"
     },
     {
       "name": "Regression-based Physics Informed Neural Networks for Magnetopause Tracking",
@@ -322,7 +341,7 @@
     },
     {
       "name": "Comparing Kalman Filter with Recurrent-based machine learning on Satellite Attitude Determination",
-      "summary": "his study utilizes attitude data (position and velocity) from the IDEASSat (INSPIRESat-2) satellite and applies the GRU (Gated Recurrent Unit) machine learning algorithm to predict these parameters. The predicted values are compared with those obtained from a Kalman filter, and results indicate that the Bi-GRU algorithm performs slightly better.",
+      "summary": "This study utilizes attitude data (position and velocity) from the IDEASSat (INSPIRESat-2) satellite and applies the GRU (Gated Recurrent Unit) machine learning algorithm to predict these parameters. The predicted values are compared with those obtained from a Kalman filter, and results indicate that the Bi-GRU algorithm performs slightly better.",
       "highlights": ["Kalman Filter", "Bi-GRU", "Attitude Determination and Control", "Benchmarking"],
       "startDate": "2022-02-27",
       "endDate": "2022-06-05",
