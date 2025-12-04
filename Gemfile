@@ -9,7 +9,7 @@ group :jekyll_plugins do
     gem 'jekyll-imagemagick'
     gem 'jekyll-jupyter-notebook'
     gem 'jekyll-link-attributes'
-    gem 'jekyll-minifier'
+    # gem 'jekyll-minifier'  # Temporarily disabled - requires mini_racer which doesn't work on Windows
     gem 'jekyll-paginate-v2'
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
@@ -18,7 +18,7 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'observer'
-    gem 'mini_racer'
+    # gem 'mini_racer'  # Temporarily disabled - doesn't build on Windows
     gem 'unicode_utils'
     gem 'webrick'
 end
