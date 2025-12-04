@@ -6,7 +6,7 @@
     - name: Date of Birth
       value: 16th July 2001
     - name: Languages
-      value: English, German
+      value: English, Japanese
 
 - title: Education
   type: time_table
