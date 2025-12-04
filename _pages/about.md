@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Applied CSE,  Imperial College London
+subtitle: Complexity Science and Engineering - Nuclear Fusion, University of Tokyo
 nav_order: 1
 
 profile:
