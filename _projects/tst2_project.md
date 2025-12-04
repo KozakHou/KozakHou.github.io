@@ -146,7 +146,7 @@ Although FNO statistically achieves good accuracy and accelerates inference comp
 
 ### Loss function and Physics-Informed Operation
 
-To train the artificial neural network, the objective function, or called total loss function $(\mathcal{L}_{\text{total}})$ consisting of a MSE loss $(\mathcal{L}_{\text{mse}})$, spectral loss $(\mathcal{L}_{\text{spectral}})$, boundary condition loss $(\mathcal{L}_{\text{boundary}})$, and the residual physics-informed loss $(\mathcal{L}_{\text{physics}})$:
+To train the artificial neural network, the total loss function $$\mathcal{L}_{\text{total}}$$ consists of four components: MSE loss $$\mathcal{L}_{\text{mse}}$$, spectral loss $$\mathcal{L}_{\text{spectral}}$$, boundary condition loss $$\mathcal{L}_{\text{boundary}}$$, and the residual physics-informed loss $$\mathcal{L}_{\text{physics}}$$:
 
 $$
 \mathcal{L}_{\text{total}} = \lambda_{\text{mse}}\mathcal{L}_{\text{mse}} + \lambda_{\text{spectral}}\mathcal{L}_{\text{spectral}} + \lambda_{\text{boundary}}\mathcal{L}_{\text{boundary}} + \lambda_{\text{physics} }\mathcal{L}_{\text{physics}}
