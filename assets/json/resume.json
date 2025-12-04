@@ -281,6 +281,11 @@
   ],
   "references": [
     {
+      "name": "Professor Adriana Paluszny Rodriguez",
+      "icon": "fa-solid fa-star",
+      "reference": "Professor in Computational Geomechanics at Imperial College London, United Kingdom."
+    },
+    {
       "name": "Doctor Chun-Yu (Chris) Lin",
       "icon": "fa-solid fa-star",
       "reference": "Associate Researcher at National Center for High-performance Computing, National Applied Research Laboratories, Taiwan.",
@@ -289,12 +294,12 @@
     {
       "name": "Professor Jih-Hong Shue",
       "icon": "fa-solid fa-star",
-      "reference": "Professor at Department of Space Science and Engineering, National Central University, Taiwan."
+      "reference": "Professor in Space Science and Engineering at National Central University, Taiwan."
     },
     {
       "name": "Professor Chia-Hsien Lin",
       "icon": "fa-solid fa-star",
-      "reference": "Professor at Department of Space Science and Engineering, National Central University, Taiwan."
+      "reference": "Professor in Space Science and Engineering at National Central University, Taiwan."
     }
   ],
   "projects": [
