@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Po-Han (Kozak) Hou",
-    "label": "MSc Student in Applied Computational Science and Engineering",
+    "label": "Incoming PhD student in Nuclear Fusion Research",
     "image": "",
-    "email": "pohan.hou24@imperial.ac.uk",
-    "phone": "(44) 7719710593",
+    "email": "kozak20010716@gmail.com",
+    "phone": "+886905804898",
     "url": "https://KozakHou.github.io",
-    "summary": "My primary research work lies in neural network architecture reconstruction and configuration, applying real-world problems and physics phenomena to it.",
+    "summary": "My primary research work lies in fusion plasma modelling and machine learning surrogate, applying real-world problems and physics phenomena to it.",
     "location": {
-      "address": "Exibition Road",
-      "postalCode": "SW7 2FA",
-      "city": "South Kensington",
-      "countryCode": "UK",
-      "region": "London"
+      "address": "University of Tokyo, Kashiwa Campus",
+      "postalCode": "277-8561",
+      "city": "Chiba",
+      "countryCode": "JP",
+      "region": "Tokyo"
     },
     "profiles": [ 
       {
