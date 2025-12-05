@@ -1,17 +1,17 @@
 {
   "basics": {
     "name": "Po-Han (Kozak) Hou",
-    "label": "Incoming PhD student in Nuclear Fusion Research",
+    "label": "Freelance Developer",
     "image": "",
     "email": "kozak20010716@gmail.com",
     "url": "https://KozakHou.github.io",
     "summary": "My primary research work lies in fusion plasma modelling and machine learning surrogate, applying real-world problems and physics phenomena to it.",
     "location": {
-      "address": "University of Tokyo, Kashiwa Campus",
-      "postalCode": "277-8561",
-      "city": "Chiba",
-      "countryCode": "JP",
-      "region": "Tokyo"
+      "address": "---",
+      "postalCode": "---",
+      "city": "---",
+      "countryCode": "---",
+      "region": "---"
     },
     "profiles": [ 
       {
@@ -73,12 +73,12 @@
   ],
   "education": [
     {
-      "institution": "University of Tokyo, Chiba, Japan",
-      "location": "Chiba, Japan",
+      "institution": "---",
+      "location": "---",
       "url": "https://www.u-tokyo.ac.jp/en/",
-      "area": "Nuclear Fusion Research",
+      "area": "Nuclear Fusion",
       "studyType": "Doctor of Philosophy",
-      "startDate": "2026-10-01",
+      "startDate": "---",
       "endDate": "",
       "GPA": " / ",
       "courses": []
