@@ -23,6 +23,15 @@
   },
   "work": [
     {
+      "name": "XingAn Clinic - National Health Insurance Administration",
+      "position": "Full Stack Software Engineer",
+      "url": "https://www.xingan.org.tw/",
+      "startDate": "2025-12-01",
+      "endDate": "",
+      "summary": "Designed and deployed an end -to-end clinic booking and queue management system integrated with the LINE chatbot messaging platform. Developed an AI-assisted clinical documentation pipeline, enabling ASR transcription and automated summarization of doctor –patient visits with privacy aware, event -driven backend architecture.",
+      "highlights": ["Web Application", "LINE (Social Media Platform)", "ASR-Ollama", "Medical AI Assistant"]
+    },
+    {
       "name": "Moldex3D",
       "position": "Software RD Intern",
       "url": "https://www.moldex3d.com/",
