@@ -14,7 +14,7 @@ display_categories: [In Progress, Published]
 
 ### Published
 
-* (Accepted for Oral Presentation) Hou, P.-H and Hsieh, S.-C. (2025) Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking, International Conference on Scientific Computing and Machine Learning 2025. Manuscript is available at: https://arxiv.org/abs/2306.09621
+* (Accepted for Oral Presentation) Hou, P.-H and Hsieh, S.-C. (2025) Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking, International Conference on Scientific Computing and Machine Learning 2025.
 
 <br>
 
