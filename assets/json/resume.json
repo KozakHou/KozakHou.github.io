@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Po-Han (Kozak) Hou",
-    "label": "Freelance Developer",
+    "label": "PhD Student in Nuclear Fusion",
     "image": "",
     "email": "kozak20010716@gmail.com",
     "url": "https://KozakHou.github.io",
@@ -82,12 +82,12 @@
   ],
   "education": [
     {
-      "institution": "---",
-      "location": "---",
+      "institution": "University of Tokyo, Tokyo, Japan",
+      "location": "Chiba, Japan",
       "url": "https://www.u-tokyo.ac.jp/en/",
       "area": "Nuclear Fusion",
       "studyType": "Doctor of Philosophy",
-      "startDate": "---",
+      "startDate": "2026-10-01",
       "endDate": "",
       "GPA": " / ",
       "courses": []
