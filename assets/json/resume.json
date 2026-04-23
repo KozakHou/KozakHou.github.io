@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Po-Han (Kozak) Hou",
-    "label": "PhD Student in Nuclear Fusion",
+    "label": "PhD Student in Nuclear Fusion Research Program",
     "image": "",
     "email": "kozak20010716@gmail.com",
     "url": "https://KozakHou.github.io",
@@ -129,6 +129,20 @@
   ],
   "awards": [
     {
+      "title": "Third Place (254 Teams), NeurIPS 2024 ML4CFD Competition ",
+      "date": "2024-12-08",
+      "awarder": "SystemX / NeurIPS 2024",
+      "url": "https://www.codabench.org/competitions/3282/#/results-tab",
+      "summary": "Achieved highest ML score (0.66) among all participants (254 teams) using a modified neural operator"
+    },
+    {
+      "title": "Future Star Awards",
+      "date": "2024-05-15",
+      "awarder": "Space Science Society of ROC Annual Meeting, 2024",
+      "url": "https://www.ss.ncu.edu.tw/",
+      "summary": "Prototype of the Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking, which was specially awarded by the Space Science Society of ROC Annual Meeting, 2024."
+    },
+    {
       "title": "Dean's Award of College of Earth Science",
       "date": "2024-05-31",
       "awarder": "College of Earth Science, National Central University",
@@ -189,10 +203,10 @@
   ],
   "publications": [
     {
-      "name": "(Submitted) Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking",
-      "publisher": "International Conference on Scientific Computing and Machine Learning 2025 (SCML2025)",
+      "name": "Regression-based Physics Informed Neural Networks (Reg-PINNs) for Magnetopause Tracking",
+      "publisher": "International Conference on Scientific Computing and Machine Learning 2025 (SCML2025), Journal of Scientific Computing and Machine Learning, 1, 1-8",
       "releaseDate": "2024-11-25",
-      "url": "https://arxiv.org/abs/2306.09621",
+      "url": "https://scml.jp/2025/paper/1.pdf",
       "summary": "Previous research in the scientific field has utilized statistical empirical models and machine learning to address fitting challenges. While empirical models have the advantage of numerical generalization, they often sacrifice accuracy. However, conventional machine learning methods can achieve high precision but may lack the desired generalization. The article introduces a Regression-based Physics Informed Neural Networks (Reg-PINNs), which embeds physics-inspired empirical models into the neural network’s loss function, thereby combining the benefits of generalization and high accuracy. The study validates the proposed method using the magnetopause boundary location as the target and explores the feasibility of methods including Shue et al. [1998], a data overfitting model, a fully-connected networks, Reg-PINNs with Shue’s model, and Reg-PINNs with the overfitting model. Compared to Shue’s model, this technique achieves approximately a 30% reduction in RMSE, presenting a proof-of-concept improved solution for the scientific community."
     },
     {

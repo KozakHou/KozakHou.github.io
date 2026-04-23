@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Freelance Developer
+subtitle: PhD Student in Nuclear Fusion Research Program
 nav_order: 1
 
 profile:
