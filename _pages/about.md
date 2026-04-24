@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Student in Nuclear Fusion Research Program
+subtitle: PhD Student @ UTokyo
 nav_order: 1
 
 profile:
