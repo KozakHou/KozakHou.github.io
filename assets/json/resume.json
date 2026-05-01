@@ -304,6 +304,11 @@
   ],
   "references": [
     {
+      "name": "Professor Naoto Tsujii",
+      "icon": "fa-solid fa-star",
+      "reference": "Professor in Complexity Science and Engineering at University of Tokyo, Japan."
+    },
+    {
       "name": "Professor Adriana Paluszny Rodriguez",
       "icon": "fa-solid fa-star",
       "reference": "Professor in Computational Geomechanics at Imperial College London, United Kingdom."
