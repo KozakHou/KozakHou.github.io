@@ -296,9 +296,20 @@
       "icon": "fa-solid fa-tag",
       "keywords": [
         "Computational Mathematics",
-        "Computational Fluid Dynamics",
+        "Neural Physics Surrogates",
         "High-performance Scientific Computing",
-        "Scientific Machine Learning (SciML)"
+        "Scientific Machine Learning (SciML)",
+        "Digital Twins"
+      ]
+    },
+    {
+      "name": "Fusion Plasma Physics",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Fusion Plasma Wave Propagation Simulation",
+        "Non-inductive Current Drive",
+        "Plasma Start-up",
+        "All Order Spectral Algorithm (AORSA)"
       ]
     }
   ],
