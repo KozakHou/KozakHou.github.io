@@ -2,8 +2,6 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications and manuscripts by Po-Han (Kozak) Hou on Reg-PINNs, scientific machine learning, and fusion-oriented wave simulation.
-keywords: Kozak Hou, Po-Han Hou, Publications, Reg-PINNs, PINN, Scientific Machine Learning, Fusion Science, UTokyo, Imperial College London, NCU, Lower Hybrid Wave, TST-2
 nav: true
 nav_order: 5
 display_categories: [In Progress, Published]

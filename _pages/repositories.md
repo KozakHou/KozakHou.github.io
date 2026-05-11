@@ -2,7 +2,6 @@
 layout: page
 permalink: /Repositories/
 title: Repositories
-description: GitHub repositories and profile links for Po-Han (Kozak) Hou, including Reg-PINNs, neural operator, and scientific computing projects.
 keywords: Kozak Hou, Po-Han Hou, GitHub, Repositories, Reg-PINNs, PINN, Neural Operator, Fourier Neural Operator, Scientific Computing
 nav: false
 nav_order: 5
