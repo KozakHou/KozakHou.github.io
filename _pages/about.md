@@ -24,6 +24,9 @@ I am a PhD student in Nuclear Fusion Research at the [Graduate School of Frontie
 Prior to my PhD, I was supervised by [Professor Adriana Paluszny Rodriguez](https://profiles.imperial.ac.uk/apaluszn/about) and coadvised by Professor Tsujii in the MSc Applied Computational Science and Engineering program (2024-2025) at Imperial College London. I also completed my bachelor's degree in Space Science and Engineering with a credit program in Interdicipline Artificial Intilligence at National Central University in Taiwan (2020-2024). I was privileged to be advised by [Dr. Chun-Yu Lin](https://sites.google.com/site/lincytw/) and [Professor Jih-Hong Shue](https://cis.ncu.edu.tw/iTeacher/home/0xc167e564455960207f80c150885efa85) for their guidance in high-performance scientific computing and numerical methods in space physics.
 
 
+<br>
+<br>
+
 ## Research Focus
 
 - Scientific machine learning for fusion science and nuclear fusion
