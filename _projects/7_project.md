@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Parallel Computing, with applications in Quantitative Strategies
-description: Anastasia Papadopoulou, Kozak Hou, William Noh
+description: Parallel computing project benchmarking multicore quantitative strategies on an HPC cluster.
+keywords: Parallel Computing, HPC, High Performance Computing, Quantitative Strategies, Multicore, Scientific Computing
+og_image: /assets/img/CCON.png
 img: assets/img/CCON.png
 importance: 4
 permalink: projects/parallel-computing-with-applications-in-quantitative-strategies/

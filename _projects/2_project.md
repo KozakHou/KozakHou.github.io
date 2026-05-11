@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Numerical Methods and Physics Informed Neural Networks in Advection Function
-description: Kozak Hou
+description: PINN and numerical-method study of the advection equation, comparing discretization strategies and physics-informed learning for PDEs.
+keywords: PINN, Physics Informed Neural Networks, Advection Equation, Numerical Methods, Scientific Computing, PDE
+og_image: /assets/img/adv.png
 img: assets/img/adv.png
 permalink: projects/numerical-methods-and-pinn-in-advection-function/
 importance: 5

@@ -2,13 +2,16 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: 
+description: Research and engineering projects by Po-Han (Kozak) Hou spanning Reg-PINNs, PINNs, neural operators, lower hybrid wave simulation, HPC, and parallel computing.
+keywords: Kozak Hou, Po-Han Hou, Projects, Reg-PINNs, PINN, Neural Operator, Fourier Neural Operator, TST-2, Lower Hybrid Wave, Scientific Computing, Scientific Machine Learning, HPC, Parallel Computing
 nav: true
 nav_order: 4
 display_categories: 
 horizontal: false
 ---
 <!-- pages/projects.md -->
+
+This project portfolio covers scientific computing and scientific machine learning work on Reg-PINNs, PINNs, neural operators, lower hybrid wave simulation on TST-2, high-performance computing, and parallel computing.
 
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}

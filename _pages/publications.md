@@ -2,10 +2,14 @@
 layout: page
 permalink: /publications/
 title: Publications
+description: Publications and manuscripts by Po-Han (Kozak) Hou on Reg-PINNs, scientific machine learning, and fusion-oriented wave simulation.
+keywords: Kozak Hou, Po-Han Hou, Publications, Reg-PINNs, PINN, Scientific Machine Learning, Fusion Science, UTokyo, Imperial College London, NCU, Lower Hybrid Wave, TST-2
 nav: true
 nav_order: 5
 display_categories: [In Progress, Published]
 ---
+This page collects publications and current manuscripts by Po-Han (Kozak) Hou across scientific machine learning, Reg-PINNs, and fusion-related wave simulation.
+
 ### In Progress
 
 * Hou, Po-Han, Naoto Tsujii, (2026), Physics-Informed Neural Operator Scheme for Accelerating Simulation of 2D Lower-Hybrid Wave on TST-2 Spherical Tokamak

@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Pretrained Fourier Neural Operator for Non-Newtonian Fluid Dynamics
-description: Kozak Hou, Yi-Che Hsieh
+description: Fourier Neural Operator surrogate modeling for non-Newtonian fluid dynamics in Moldex3D, focused on scientific computing and operator learning for PDEs.
+keywords: Fourier Neural Operator, Neural Operator, Scientific Computing, Scientific Machine Learning, Non-Newtonian Fluid Dynamics, PDE, HPC
+og_image: /assets/img/cae.jpg
 img: assets/img/cae.jpg
 permalink: projects/pretrained-fourier-neural-operator-for-non-newtonian-fluid-dynamics/
 importance: 2

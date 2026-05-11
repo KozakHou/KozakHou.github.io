@@ -1,7 +1,9 @@
 ---
 layout: page
 title: High Performance Computing with NVIDIA-RAPIDS
-description: Kozak Hou
+description: High-performance computing project using NVIDIA RAPIDS for GPU-accelerated data science workflows on EMNIST and remote sensing datasets.
+keywords: HPC, High Performance Computing, NVIDIA RAPIDS, Scientific Computing, Parallel Computing, GPU
+og_image: /assets/img/EMNIST.png
 img: assets/img/EMNIST.png
 permalink: /projects/high-performance-computing-with-nvidia-rapids/
 importance: 8

@@ -3,19 +3,27 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Kozak
-middle_name: 
+first_name: Po-Han
+middle_name: (Kozak)
 last_name: Hou
 email: kozak20010716@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  Po-Han (Kozak) Hou is a PhD student in Nuclear Fusion Research at the University of Tokyo (UTokyo)
+  working on Reg-PINNs, PINNs, neural operators, scientific computing, scientific machine learning,
+  high-performance computing, and lower hybrid wave simulation for fusion plasma applications.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: >
+  Kozak Hou, Po-Han Hou, Reg-PINNs, PINN, Neural Operator, Physics-Informed Neural Operator,
+  Fusion Science, University of Tokyo, UTokyo, Imperial College London, IC, National Central University,
+  NCU, Scientific Computing, Scientific Machine Learning, TST-2, Nuclear, Nuclear Fusion, Plasma,
+  Wave Simulation, Lower Hybrid Wave, AORSA, Parallel Computing, HPC, Fourier Neural Operator,
+  Geometry-Embedded Fourier Neural Operator
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: acm.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://KozakHou.github.io # the base hostname & protocol for your site
+url: https://kozakhou.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -60,9 +68,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/selfie.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -75,7 +83,7 @@ dblp_url: # your DBLP profile url
 discord_id: # your discord id (18-digit unique numerical identifier)
 facebook_id: # your facebook id
 flickr_id: # your flickr id
-github_username: # your GitHub user name
+github_username: KozakHou # your GitHub user name
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
 instagram_id: # your instagram id
@@ -83,7 +91,7 @@ kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
 lastfm_id: # your lastfm id
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-linkedin_username: # your LinkedIn user name
+linkedin_username: kozakhou # your LinkedIn user name
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 medium_username: # your Medium username
 orcid_id: # your ORCID ID
@@ -107,6 +115,40 @@ work_url: # work page URL
 x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
+
+person:
+  name: Po-Han (Kozak) Hou
+  alternate_names:
+    - Kozak Hou
+    - Po-Han Hou
+    - Hou Po-Han
+    - P.-H. Hou
+  image: /assets/img/selfie.jpg
+  job_title: PhD Student in Nuclear Fusion Research
+  affiliations:
+    - University of Tokyo
+  alumni_of:
+    - Imperial College London
+    - National Central University
+  knows_about:
+    - Reg-PINNs
+    - PINN
+    - Neural Operator
+    - Physics-Informed Neural Operator
+    - Fusion Science
+    - Scientific Computing
+    - Scientific Machine Learning
+    - TST-2
+    - Nuclear
+    - Nuclear Fusion
+    - Plasma
+    - Wave Simulation
+    - Lower Hybrid Wave
+    - AORSA
+    - Parallel Computing
+    - High-Performance Computing
+    - Fourier Neural Operator
+    - Geometry-Embedded Fourier Neural Operator
 
 contact_note: >
   Contact: kozak20010716@gmail.com

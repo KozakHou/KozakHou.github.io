@@ -4,8 +4,8 @@
     "label": "PhD Student in Nuclear Fusion Research Program",
     "image": "",
     "email": "kozak20010716@gmail.com",
-    "url": "https://KozakHou.github.io",
-    "summary": "My primary research work lies in fusion plasma modelling and machine learning surrogate, applying real-world problems and physics phenomena to it.",
+    "url": "https://kozakhou.github.io",
+    "summary": "PhD student in Nuclear Fusion Research at the University of Tokyo (UTokyo) working on scientific computing, scientific machine learning, PINNs, Reg-PINNs, neural operators, Fourier Neural Operator methods, lower hybrid wave simulation, and fusion plasma modeling.",
     "location": {
       "address": "---",
       "postalCode": "---",
@@ -18,6 +18,11 @@
         "network": "LinkedIn",
         "username": "Kozak Hou",
         "url": "https://www.linkedin.com/in/kozakhou"
+      },
+      {
+        "network": "GitHub",
+        "username": "KozakHou",
+        "url": "https://github.com/KozakHou"
       }
     ]
   },

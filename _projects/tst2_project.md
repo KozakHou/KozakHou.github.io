@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Physics-based Machine Learning Scheme for Accelerating Simulation of 2D Lower-Hybrid Wave on TST-2 Spherical Tokamak
-description: Po-Han Hou, Naoto Tsujii, Adriana Paluszny
+description: Physics-informed neural operator surrogate for lower hybrid wave simulation on the TST-2 spherical tokamak, combining plasma physics, scientific machine learning, and fusion-oriented HPC.
+keywords: Physics-Informed Neural Operator, Neural Operator, Fourier Neural Operator, Geometry-Embedded Fourier Neural Operator, TST-2, Lower Hybrid Wave, Plasma, Nuclear Fusion, UTokyo, University of Tokyo, AORSA, Scientific Computing, Scientific Machine Learning, HPC
+og_image: /assets/img/TST2.jpeg
 img: assets/img/TST2.jpeg
 importance: 1
 category: work

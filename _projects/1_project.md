@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Regression-based Physics Informed Nueral Networks for Magentopause Tracking
-description: Kozak Hou, Sung-Chi Hsieh, Chun-Yu Lin, Jih-Hong Shue
+title: Regression-based Physics Informed Neural Networks for Magnetopause Tracking
+description: Reg-PINNs model for magnetopause tracking that combines physics-based regression and neural networks to improve scientific machine learning generalization.
+keywords: Reg-PINNs, PINN, Scientific Machine Learning, Magnetopause, Plasma, Space Physics, Regression-based Physics Informed Neural Networks
+og_image: /assets/img/mag.jpg
 img: assets/img/mag.jpg
 permalink: /projects/regression-based-physics-informed-neural-networks-for-magentopause-tracking/
 importance: 3
