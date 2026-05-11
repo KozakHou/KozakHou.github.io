@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://KozakHou.github.io/sitemap.xml
+Sitemap: https://kozakhou.github.io/sitemap.xml
