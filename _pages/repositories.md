@@ -6,7 +6,7 @@ keywords: Kozak Hou, Po-Han Hou, GitHub, Repositories, Reg-PINNs, PINN, Neural O
 nav: false
 nav_order: 5
 ---
-This page aggregates the public GitHub profile and selected repositories for Po-Han (Kozak) Hou, including code related to Reg-PINNs, neural operators, and scientific computing.
+
 
 ## GitHub users
 

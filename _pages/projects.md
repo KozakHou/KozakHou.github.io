@@ -10,8 +10,6 @@ horizontal: false
 ---
 <!-- pages/projects.md -->
 
-This project portfolio covers scientific computing and scientific machine learning work on Reg-PINNs, PINNs, neural operators, lower hybrid wave simulation on TST-2, high-performance computing, and parallel computing.
-
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->

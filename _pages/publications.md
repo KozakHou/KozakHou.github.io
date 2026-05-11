@@ -6,7 +6,6 @@ nav: true
 nav_order: 5
 display_categories: [In Progress, Published]
 ---
-This page collects publications and current manuscripts by Po-Han (Kozak) Hou across scientific machine learning, Reg-PINNs, and fusion-related wave simulation.
 
 ### In Progress
 
