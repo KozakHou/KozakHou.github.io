@@ -221,9 +221,10 @@
       "name": {{ meta_title | jsonify }},
       "headline": {{ page_headline | jsonify }},
       "description": {{ meta_description | jsonify }},
-      "isPartOf": { "@id": {{ site.url | append: '/#website' | jsonify }} },
+      "isPartOf": { "@id": {{ site.url | append: '/#website' | jsonify }} }{% if schema_page_type == 'ProfilePage' %},
+      "mainEntity": { "@id": {{ site.url | append: '/#person' | jsonify }} }{% else %},
       "about": { "@id": {{ site.url | append: '/#person' | jsonify }} },
-      "author": { "@id": {{ site.url | append: '/#person' | jsonify }} }{% if meta_image_url != blank %},
+      "author": { "@id": {{ site.url | append: '/#person' | jsonify }} }{% endif %}{% if meta_image_url != blank %},
       "primaryImageOfPage": {{ meta_image_url | jsonify }}{% endif %}{% if is_blog_post and page.date %},
       "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endif %}
     }
