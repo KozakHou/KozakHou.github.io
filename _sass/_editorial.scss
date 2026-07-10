@@ -675,12 +675,6 @@ a.ed-card {
   border: none;
   box-shadow: none;
   user-select: none;
-  touch-action: none;
-  cursor: grab;
-
-  &:active {
-    cursor: grabbing;
-  }
 }
 
 .ed-orbit-center {
@@ -757,6 +751,12 @@ a.ed-card {
   height: 460px;
   min-height: 460px;
   overflow: visible;
+  touch-action: none;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
 
   .ed-orbit-center {
     position: absolute;
@@ -1120,10 +1120,19 @@ a.ed-card {
   .ed-hero-grid .ed-lede {
     font-size: 18px;
   }
+  .ed-orbit,
+  .ed-orbit.ed-orbit-ready {
+    touch-action: auto;
+    cursor: default;
+  }
+  .ed-orbit {
+    .ed-orbit-detail {
+      transition: none;
+    }
+  }
   .ed-orbit.ed-orbit-ready {
     height: auto;
     min-height: 0;
-    cursor: default;
 
     .ed-orbit-center {
       position: static;
@@ -1133,6 +1142,7 @@ a.ed-card {
     }
     .ed-orbit-detail {
       display: none;
+      transition: none;
     }
     .ed-orbit-planet {
       position: static;
@@ -1143,6 +1153,7 @@ a.ed-card {
       opacity: 1;
       filter: none;
       transform: none !important;
+      transition: none;
     }
     .ed-orbit-fallback {
       display: block;
