@@ -11,6 +11,7 @@ assets/libs/
 node_modules/
 vendor
 .idea
+.superpowers/
 final-report-src/kh124-final-report.pdf
 final-report-src/kh124-final-report.tex
 final-report-src/references.bib
