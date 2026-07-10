@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <!-- Head -->
+  <head>
+    {% if page.redirect %}
+      {% if page.redirect == true %}
+        {% assign redirect = site.baseurl | append: '/' %}
+      {% elsif page.redirect contains '://' %}
+        {% assign redirect = page.redirect %}
+      {% else %}
+        {% assign redirect = page.redirect | relative_url %}
+      {% endif %}
+      <meta http-equiv="refresh" content="3; url={{ redirect }}">
+    {% endif %}
+    {% include head.liquid %}
+  </head>
+
+  <!-- Body -->
+  <body class="ed-page-body">
+    <div class="ed">
+      <!-- Header -->
+      {% include header.liquid %}
+
+      <!-- Content -->
+      <main role="main">
+        {% if page.ed_article %}
+          <article class="ed-detail">
+            <a class="ed-back" href="{{ '/projects/' | relative_url }}">← Research &amp; Projects</a>
+            <div class="ed-article">
+              {{ content }}
+            </div>
+          </article>
+        {% else %}
+          {{ content }}
+        {% endif %}
+      </main>
+
+      <!-- Footer -->
+      {% include footer.liquid %}
+    </div>
+
+    <!-- JavaScripts -->
+    {% include scripts/jquery.liquid %}
+    {% include scripts/bootstrap.liquid %}
+    {% include scripts/mermaid.liquid %}
+    {% include scripts/misc.liquid %}
+    {% include scripts/mathjax.liquid %}
+    {% include scripts/analytics.liquid %}
+    {% include scripts/back_to_top.liquid %}
+    {% include scripts/search.liquid %}
+    <script src="{{ '/assets/js/shortcut-key.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/ed-orbit.js' | relative_url }}"></script>
+  </body>
+</html>

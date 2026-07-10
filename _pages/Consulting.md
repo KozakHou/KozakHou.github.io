@@ -1,7 +1,7 @@
 ---
 layout: editorial
 title: Consulting
-permalink: /scientific-ai-hpc-consulting/
+permalink: /consulting/
 ed_active: consulting
 description: Consulting for scientific AI, physics-informed machine learning, surrogate modeling, and high-performance computing workflows.
 keywords: Scientific AI, HPC Consulting, Scientific Machine Learning, Physics-Informed Machine Learning, Neural Operators, Surrogate Modeling, High Performance Computing, GPU Computing
