@@ -28,7 +28,7 @@ nav_order: 7
 
     <div class="ed-cv-section" id="education">EDUCATION</div>
     <div class="ed-cv-row">
-      <div class="ed-cv-date">2025 –</div>
+      <div class="ed-cv-date">2026 –</div>
       <div>
         <div class="ed-cv-title">PhD, Nuclear Fusion - Complexity Science and Engineering</div>
         <div class="ed-cv-detail">University of Tokyo<br>Research Interests: Scientific ML, Fusion Plasma Wave, Digital Twins<br>Advisor: <a href="https://www.k.u-tokyo.ac.jp/en/gsfs/faculty/naoto_tsujii/" target="_blank" rel="noopener">Prof. Naoto Tsujii</a></div>
