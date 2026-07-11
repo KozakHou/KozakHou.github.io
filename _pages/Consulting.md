@@ -15,41 +15,39 @@ nav_order: 2
     <p class="ed-lede">Helping engineering teams accelerate scientific simulations with AI — physics-informed machine learning, neural-operator surrogates, and high-performance computing workflows.</p>
   </div>
   <aside class="ed-hero-aside">
-    <div class="ed-orbit" id="ed-orbit" data-tilt="36" aria-label="Track record">
-      <div class="ed-orbit-center">
-        <span class="ed-label">TRACK RECORD</span>
-        <div class="ed-orbit-title">Results</div>
-        <div class="ed-orbit-detail" id="ed-orbit-detail" aria-live="polite"></div>
-      </div>
-      <div
-        class="ed-orbit-planet"
-        data-r="130"
-        data-phase="0"
-        data-detail="Simulation speedup at Moldex3D — hours to seconds, &lt;3% error"
-      >
-        <div class="ed-orbit-num">~2000×</div>
-        <div class="ed-orbit-tag">Moldex3D</div>
-        <div class="ed-orbit-fallback">Simulation speedup at Moldex3D — hours to seconds, &lt;3% error</div>
-      </div>
-      <div
-        class="ed-orbit-planet"
-        data-r="175"
-        data-phase="2.094"
-        data-detail="Faster lower-hybrid-wave inference with a neural-operator surrogate"
-      >
-        <div class="ed-orbit-num">281.8×</div>
-        <div class="ed-orbit-tag">Plasma Wave Surrogates</div>
-        <div class="ed-orbit-fallback">Faster lower-hybrid-wave inference with a neural-operator surrogate</div>
-      </div>
-      <div
-        class="ed-orbit-planet"
-        data-r="210"
-        data-phase="4.189"
-        data-detail="NeurIPS 2024 ML4CFD Competition — top 1% of 254 teams"
-      >
-        <div class="ed-orbit-num">3rd place</div>
-        <div class="ed-orbit-tag">NeurIPS ML4CFD</div>
-        <div class="ed-orbit-fallback">NeurIPS 2024 ML4CFD Competition — top 1% of 254 teams</div>
+    <div class="ed-tree" id="ed-tree" aria-label="Track record">
+      <span class="ed-label">TRACK RECORD</span>
+      <div class="ed-tree-detail" id="ed-tree-detail" aria-live="polite">Hover a result to read the full explanation.</div>
+      <div class="ed-tree-root">Results</div>
+      <div class="ed-tree-trunk" aria-hidden="true"></div>
+      <div class="ed-tree-branches">
+        <div
+          class="ed-tree-leaf"
+          tabindex="0"
+          data-detail="Simulation speedup at Moldex3D — hours to seconds under less than 3% error"
+        >
+          <div class="ed-tree-num">1997.2×</div>
+          <div class="ed-tree-tag">Moldex3D</div>
+          <div class="ed-tree-fallback">Simulation speedup at Moldex3D — hours to seconds under less than 3% error</div>
+        </div>
+        <div
+          class="ed-tree-leaf"
+          tabindex="0"
+          data-detail="Faster lower-hybrid-wave inference with a neural-operator surrogate"
+        >
+          <div class="ed-tree-num">281.8×</div>
+          <div class="ed-tree-tag">Plasma Wave Surrogates</div>
+          <div class="ed-tree-fallback">Faster LH Wave inference with a neural operator surrogate</div>
+        </div>
+        <div
+          class="ed-tree-leaf"
+          tabindex="0"
+          data-detail="NeurIPS 2024 ML4CFD Competition — top 1% of 254 teams"
+        >
+          <div class="ed-tree-num">3rd place</div>
+          <div class="ed-tree-tag">NeurIPS ML4CFD</div>
+          <div class="ed-tree-fallback">NeurIPS 2024 ML4CFD Competition — top 1% of 254 teams</div>
+        </div>
       </div>
     </div>
   </aside>

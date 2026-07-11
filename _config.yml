@@ -3,19 +3,19 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Po-Han
+first_name: PoHan
 middle_name: (Kozak)
 last_name: Hou
 email: kozak20010716@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Po-Han (Kozak) Hou is a PhD student in Nuclear Fusion Research at the University of Tokyo (UTokyo)
+  PoHan (Kozak) Hou is a PhD student in Nuclear Fusion Research at the University of Tokyo (UTokyo)
   working on Reg-PINNs, PINNs, neural operators, scientific computing, scientific machine learning,
   high-performance computing, and lower hybrid wave simulation for fusion plasma applications.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: >
-  Kozak Hou, Po-Han Hou, Reg-PINNs, PINN, Neural Operator, Physics-Informed Neural Operator,
+  Kozak Hou, PoHan Hou, Reg-PINNs, PINN, Neural Operator, Physics-Informed Neural Operator,
   Fusion Science, University of Tokyo, UTokyo, Imperial College London, IC, National Central University,
   NCU, Scientific Computing, Scientific Machine Learning, TST-2, Nuclear, Nuclear Fusion, Plasma,
   Wave Simulation, Lower Hybrid Wave, AORSA, Parallel Computing, HPC, Fourier Neural Operator,
@@ -117,11 +117,11 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 person:
-  name: Po-Han (Kozak) Hou
+  name: PoHan (Kozak) Hou
   alternate_names:
     - Kozak Hou
-    - Po-Han Hou
-    - Hou Po-Han
+    - PoHan Hou
+    - Hou PoHan
     - P.-H. Hou
     - 侯博瀚
     - Hóu Bó-Hàn
@@ -261,24 +261,20 @@ kramdown:
 include: ["_pages"]
 exclude:
   - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
-  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
   - LICENSE
-  - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
-  - readme_preview/
   - vendor
+  - docs/
+  - .superpowers/
+  - .claude/
 keep_files:
   - CNAME
   - .nojekyll

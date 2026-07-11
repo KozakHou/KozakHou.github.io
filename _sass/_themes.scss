@@ -3,12 +3,34 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #{#f5f5f5};
+  --global-bg-color: #{#fbfaf7};
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{#8a2be2};
-  --global-hover-color: #{#6f6e78};
+  --global-text-color: #{#1f2521};
+  --global-text-color-light: #{#57534a};
+  --global-theme-color: #{#155e56};
+  --global-hover-color: #{#12463f};
+
+  /* Editorial design tokens (light) */
+  --ed-bg: #fbfaf7;
+  --ed-card: #ffffff;
+  --ed-cta-bg: #12463f;
+  --ed-cta-text: #ffffff;
+  --ed-cta-label: #8fd0c2;
+  --ed-cta-sub: #c8dbd4;
+  --ed-cta-btn-bg: #f2f1ea;
+  --ed-cta-btn-text: #12463f;
+  --ed-cta-btn-hover-bg: #8fd0c2;
+  --ed-text: #1f2521;
+  --ed-body: #3c4038;
+  --ed-secondary: #57534a;
+  --ed-muted: #9b968a;
+  --ed-accent: #155e56;
+  --ed-accent-strong: #12463f;
+  --ed-accent-soft: #8fd0c2;
+  --ed-border: #e6e3da;
+  --ed-brand-sub: #77736a;
+  --ed-on-dark: #f2f1ea;
+  --ed-on-dark-soft: #c8dbd4;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
@@ -66,12 +88,34 @@
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #{#101413};
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{#66cdaa};
-  --global-hover-color: #{#00fa9a};
+  --global-text-color: #{#e8e6df};
+  --global-text-color-light: #{#a9ada4};
+  --global-theme-color: #{#8fd0c2};
+  --global-hover-color: #{#a9ddd0};
+
+  /* Editorial design tokens (dark) */
+  --ed-bg: #101413;
+  --ed-card: #16211d;
+  --ed-cta-bg: #8fd0c2;
+  --ed-cta-text: #12463f;
+  --ed-cta-label: #0f3a34;
+  --ed-cta-sub: #1c5048;
+  --ed-cta-btn-bg: #12463f;
+  --ed-cta-btn-text: #f2f1ea;
+  --ed-cta-btn-hover-bg: #0f3a34;
+  --ed-text: #e8e6df;
+  --ed-body: #c3c8c0;
+  --ed-secondary: #a9ada4;
+  --ed-muted: #7e847a;
+  --ed-accent: #8fd0c2;
+  --ed-accent-strong: #a9ddd0;
+  --ed-accent-soft: #8fd0c2;
+  --ed-border: #2a2f2c;
+  --ed-brand-sub: #8b9088;
+  --ed-on-dark: #f2f1ea;
+  --ed-on-dark-soft: #c8dbd4;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};

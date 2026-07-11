@@ -1,11 +1,13 @@
 ---
-layout: page
+layout: editorial
+ed_active: research
+ed_article: true
 title: Pretrained Fourier Neural Operator for Non-Newtonian Fluid Dynamics
 description: Fourier Neural Operator surrogate modeling for non-Newtonian fluid dynamics in Moldex3D, focused on scientific computing and operator learning for PDEs.
 keywords: Fourier Neural Operator, Neural Operator, Scientific Computing, Scientific Machine Learning, Non-Newtonian Fluid Dynamics, PDE, HPC
 og_image: /assets/img/cae.jpg
 img: assets/img/cae.jpg
-permalink: projects/pretrained-fourier-neural-operator-for-non-newtonian-fluid-dynamics/
+permalink: /projects/pretrained-fourier-neural-operator-for-non-newtonian-fluid-dynamics/
 importance: 2
 math: true
 ---
@@ -160,7 +162,7 @@ In this project, it is evident that the FNO model has the potential to capture t
 <br>
 
 ### Acknowledgements
-We would like to thank the Moldex3D R&F team for providing the dataset and the Moldex3D software for the simulation. Also, we would like to thank [National Center for High Perforamnce Computing](https://www.nchc.org.tw/) and [TWCC](https://www.twcc.ai/) for providing the computing resources for this project.
+We would like to thank the Moldex3D R&D team for providing the dataset and the Moldex3D software for the simulation. Also, we would like to thank [National Center for High Perforamnce Computing](https://www.nchc.org.tw/) and [TWCC](https://www.twcc.ai/) for providing the computing resources for this project.
 
 <br>
 

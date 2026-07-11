@@ -643,14 +643,14 @@ a.ed-card {
   }
 }
 
-/* ===== Consulting hero aside: orbit track record ===== */
+/* ===== Consulting hero aside: results tree ===== */
 .ed-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(340px, 1fr);
+  grid-template-columns: minmax(0, 1.7fr) minmax(480px, 1.15fr);
   gap: 40px;
   align-items: center;
   padding: 72px $ed-gutter 48px;
-  max-width: 1240px;
+  max-width: 1320px;
 
   .ed-kicker {
     margin-bottom: 20px;
@@ -663,74 +663,106 @@ a.ed-card {
     line-height: 1.6;
     color: var(--ed-body);
     margin: 0;
-    max-width: 560px;
+    max-width: 680px;
+  }
+
+  .ed-hero-aside {
+    justify-self: end;
+    width: max-content;
+    max-width: 90%;
   }
 }
 
-.ed-orbit {
-  position: relative;
-  width: 100%;
-  min-height: 280px;
+.ed-tree {
+  text-align: center;
   background: transparent;
   border: none;
   box-shadow: none;
-  user-select: none;
-}
-
-.ed-orbit-center {
-  text-align: center;
-  margin-bottom: 20px;
 
   .ed-label {
     display: block;
     font-family: $ed-mono;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 }
 
-.ed-orbit-title {
-  font-family: $ed-serif;
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--ed-text);
-  margin-bottom: 10px;
-}
-
-.ed-orbit-detail {
+.ed-tree-detail {
   font-family: $ed-sans;
   font-size: 13px;
   line-height: 1.45;
   color: var(--ed-secondary);
-  min-height: 3.9em;
-  max-width: 240px;
-  margin: 0 auto;
-  opacity: 0;
-  transition: opacity 0.25s ease;
-
-  &.show {
-    opacity: 1;
-  }
+  min-height: 3.2em;
+  max-width: 360px;
+  margin: 0 auto 16px;
 }
 
-.ed-orbit-planet {
-  text-align: center;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--ed-border);
-
-  &:last-child {
-    border-bottom: none;
-  }
-}
-
-.ed-orbit-num {
+.ed-tree-root {
   font-family: $ed-serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 1;
+  color: var(--ed-text);
+}
+
+.ed-tree-trunk {
+  width: 1px;
+  height: 28px;
+  margin: 0 auto;
+  background: var(--ed-border);
+}
+
+.ed-tree-branches {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+  padding-top: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12%;
+    right: 12%;
+    height: 1px;
+    background: var(--ed-border);
+  }
+}
+
+.ed-tree-leaf {
+  width: 156px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.2s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 1px;
+    height: 20px;
+    background: var(--ed-border);
+  }
+
+  &:hover,
+  &:focus,
+  &.active {
+    opacity: 1;
+    outline: none;
+  }
+}
+
+.ed-tree-num {
+  font-family: $ed-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.1;
   color: var(--ed-accent);
 }
 
-.ed-orbit-tag {
+.ed-tree-tag {
   font-family: $ed-sans;
   font-size: 11.5px;
   line-height: 1.3;
@@ -738,60 +770,25 @@ a.ed-card {
   margin-top: 6px;
 }
 
-.ed-orbit-fallback {
+.ed-tree-fallback {
+  display: none;
   font-family: $ed-sans;
-  font-size: 13px;
+  font-size: 12.5px;
   line-height: 1.45;
   color: var(--ed-secondary);
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
-/* JS-enhanced orbit */
-.ed-orbit.ed-orbit-ready {
-  height: 460px;
-  min-height: 460px;
-  overflow: visible;
-  touch-action: none;
-  cursor: grab;
-
-  &:active {
-    cursor: grabbing;
-  }
-
-  .ed-orbit-center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    pointer-events: none;
-    width: 220px;
-    margin-bottom: 0;
-  }
-
-  .ed-orbit-planet {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 140px;
-    margin-left: -70px;
-    margin-top: -24px;
-    padding: 0;
-    border-bottom: none;
-    opacity: 0.32;
-    filter: blur(0.7px);
-    transition: opacity 0.25s ease, filter 0.25s ease;
-    z-index: 3;
-
-    &.clear {
-      opacity: 1;
-      filter: none;
-      z-index: 5;
-    }
-  }
-
-  .ed-orbit-fallback {
+/* No-JS / narrow: show per-leaf explanations */
+.ed-tree:not(.ed-tree-ready) {
+  .ed-tree-detail {
     display: none;
+  }
+  .ed-tree-leaf {
+    opacity: 1;
+  }
+  .ed-tree-fallback {
+    display: block;
   }
 }
 
@@ -1120,44 +1117,39 @@ a.ed-card {
   .ed-hero-grid .ed-lede {
     font-size: 18px;
   }
-  .ed-orbit,
-  .ed-orbit.ed-orbit-ready {
-    touch-action: auto;
-    cursor: default;
-  }
-  .ed-orbit {
-    .ed-orbit-detail {
-      transition: none;
-    }
-  }
-  .ed-orbit.ed-orbit-ready {
-    height: auto;
-    min-height: 0;
+  .ed-tree-branches {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-top: 0;
 
-    .ed-orbit-center {
-      position: static;
-      transform: none;
-      width: auto;
-      margin-bottom: 16px;
-    }
-    .ed-orbit-detail {
+    &::before {
       display: none;
-      transition: none;
     }
-    .ed-orbit-planet {
-      position: static;
-      width: auto;
-      margin: 0;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--ed-border);
-      opacity: 1;
-      filter: none;
-      transform: none !important;
-      transition: none;
+  }
+  .ed-tree-trunk {
+    display: none;
+  }
+  .ed-tree-leaf {
+    width: 100%;
+    max-width: 320px;
+    opacity: 1;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--ed-border);
+
+    &::before {
+      display: none;
     }
-    .ed-orbit-fallback {
-      display: block;
+
+    &:last-child {
+      border-bottom: none;
     }
+  }
+  .ed-tree-detail {
+    display: none;
+  }
+  .ed-tree-fallback {
+    display: block;
   }
   .ed-how {
     padding: 40px $ed-gutter-sm 8px;

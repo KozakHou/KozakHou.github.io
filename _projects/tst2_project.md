@@ -1,5 +1,8 @@
 ---
-layout: page
+layout: editorial
+ed_active: research
+ed_article: true
+permalink: /projects/physics-based-ml-2d-lower-hybrid-wave-tst2/
 title: Physics-based Machine Learning Scheme for Accelerating Simulation of 2D Lower-Hybrid Wave on TST-2 Spherical Tokamak
 description: Physics-informed neural operator surrogate for lower hybrid wave simulation on the TST-2 spherical tokamak, combining plasma physics, scientific machine learning, and fusion-oriented HPC.
 keywords: Physics-Informed Neural Operator, Neural Operator, Fourier Neural Operator, Geometry-Embedded Fourier Neural Operator, TST-2, Lower Hybrid Wave, Plasma, Nuclear Fusion, UTokyo, University of Tokyo, AORSA, Scientific Computing, Scientific Machine Learning, HPC
@@ -31,6 +34,18 @@ Fusion energy represents a compelling solution for achieving clean and sustainab
 For plasma wave modeling, traditional numerical methods such as Finite Element Methods (FEM) and the Spectral code are widely acknowledged. The major advantage for Spectral Methods is transforming the wave equations into multiplicative operations in Fourier space but struggling with arbitrary geometries due to their reliance on global basis functions, making it inefficient for non-rectangular geometry. FEM, however, offers flexibility in the meshing of irregular domains but faces challenges in establishing stable solvers for non-local plasma response. With advances in high-performance computing, these methods have become more computationally feasible in a limited time. Recently, deep learning models, particularly Physics-Informed Neural Networks (PINNs), have emerged as surrogate solvers for conventional large-scale solver, accelerating simulations like Reynolds-Averaged Navier-Stokes and Direct Numerical Simulation by orders of magnitude $10^5$ while maintaining reliability via integrating partial differential equations (PDEs) into the learning process to enhance generalizability and robustness.
 
 The study develops and evaluates four deep learning models: ConvNet, UNet, Fourier Neural Operator (FNO), and Geometry-aware FNO (Geo-FNO), which uses the plasma wave equation as the governing model, with a ConvNet as the baseline. The models are exercised in a rectangular domain, with the expansion to the TST-2 geometry, in order to capture the underlying electric field structures launched by radio frequency waves. These field structures are pivotal in accelerating fast electrons and facilitating non-inductive current in tokamak plasmas, both of which are essential for effective heating and sustained operation in the fusion device.
+
+<div class="row">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/XRay.png" title="X-ray view of the TST-2 device" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/sectional_view.png" title="Sectional view of the TST-2 device" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    X-ray and sectional views of the TST-2 spherical tokamak.
+</div>
 
 ## Problem Statement
 

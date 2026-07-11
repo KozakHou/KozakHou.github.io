@@ -1,5 +1,7 @@
 ---
-layout: page
+layout: editorial
+ed_active: research
+ed_article: true
 title: Regression-based Physics Informed Neural Networks for Magnetopause Tracking
 description: Reg-PINNs model for magnetopause tracking that combines physics-based regression and neural networks to improve scientific machine learning generalization.
 keywords: Reg-PINNs, PINN, Scientific Machine Learning, Magnetopause, Plasma, Space Physics, Regression-based Physics Informed Neural Networks

@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Po-Han (Kozak) Hou",
+    "name": "PoHan (Kozak) Hou",
     "label": "PhD Student in Nuclear Fusion Research Program",
     "image": "",
     "email": "kozak20010716@gmail.com",
@@ -370,38 +370,6 @@
       "startDate": "2022-09-16",
       "endDate": "2024-01-20",
       "url": "https://github.com/KozakHou/Reg-PINNs"
-    },
-    {
-      "name": "Numerical Methods and Physics Informed Neural Networks in Advection Function",
-      "summary": "Demonstrated that Physics-Informed Neural Networks (PINNs) have a relatively lower likelihood of dissipation occurrence during long-term evolution compared to traditional numerical solution methods such as the Finite Difference Method and Finite Volume Method.",
-      "highlights": ["Physics-based Machine Learning", "Numerical Methods", "Benchmarking"],
-      "startDate": "2022-06-28",
-      "endDate": "2023-01-12",
-      "url": "https://github.com/KozakHou/Python-Tensorflow-DeepXDE/tree/main"
-    },
-    {
-      "name": "High Performance Computing with NVIDIA-RAPIDS",
-      "summary": "Employed RAPIDS to replace Scikit-Learn and trained the EMNIST dataset using SVM on a GPU (NVIDIA - RTX5000), resulting in a significantly reduced training time of only 91 seconds.",
-      "highlights": ["RAPIDS-cuML", "RAPIDS-cuDF", "Image Classification", "Benchmarking"],
-      "startDate": "2022-09-16",
-      "endDate": "2023-01-20",
-      "url": "https://github.com/KozakHou/cuDF-and-cuML"
-    },
-    {
-      "name": "Comparing Kalman Filter with Recurrent-based machine learning on Satellite Attitude Determination",
-      "summary": "This study utilizes attitude data (position and velocity) from the IDEASSat (INSPIRESat-2) satellite and applies the GRU (Gated Recurrent Unit) machine learning algorithm to predict these parameters. The predicted values are compared with those obtained from a Kalman filter, and results indicate that the Bi-GRU algorithm performs slightly better.",
-      "highlights": ["Kalman Filter", "Bi-GRU", "Attitude Determination and Control", "Benchmarking"],
-      "startDate": "2022-02-27",
-      "endDate": "2022-06-05",
-      "url": "https://kozakhou.github.io/projects/"
-    },
-    {
-      "name": "Automatic Emergency Dust-Free solution on-board International Space Station with Bi-GRU",
-      "summary": "With rising concerns about PM2.5 and PM0.3 particulate matter, which pose threats to both the environment and human health, as well as to instruments on the International Space Station (ISS), our team aims to relate particulate concentrations to factors like magnetic fields, humidity, acceleration, temperature, pressure, and CO2 concentration. Our goal is to develop an early warning system (EWS) using Bi-GRU algorithms to predict particulate levels, providing astronauts with reaction time to protect instruments and increase measurement accuracy. This model could also serve as a remote-sensing smoke alarm prototype.",
-      "highlights": ["Bi-GRU", "Environmental Monitoring", "Remote Sensing"],
-      "startDate": "2021-12-24",
-      "endDate": "2022-06-03",
-      "url": "https://www.icecubesservice.com/journal/ai-space-challenge-south-east-asia/"
     },
     {
       "name": "Benchmarks on ImageNet and MNIST with self-constructed Neural Networks",

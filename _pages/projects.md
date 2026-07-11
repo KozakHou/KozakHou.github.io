@@ -1,65 +1,52 @@
 ---
-layout: page
-title: Projects
+layout: editorial
+title: Research
 permalink: /projects/
-keywords: Kozak Hou, Po-Han Hou, Projects, Reg-PINNs, PINN, Neural Operator, Fourier Neural Operator, TST-2, Lower Hybrid Wave, Scientific Computing, Scientific Machine Learning, HPC, Parallel Computing
-nav: true
+ed_active: research
+keywords: Kozak Hou, PoHan Hou, Research, Projects, Reg-PINNs, PINN, Neural Operator, Fourier Neural Operator, TST-2, Lower Hybrid Wave, Scientific Computing, Scientific Machine Learning, HPC, Parallel Computing
 nav_order: 4
-display_categories: 
-horizontal: false
 ---
-<!-- pages/projects.md -->
 
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
+<div class="ed-research-head">
+  <h1 class="ed-h1">Research &amp; Projects</h1>
+  <p class="ed-sub">Scientific machine learning applied to plasma physics, fluid dynamics, and high-performance computing.</p>
+</div>
+
+<div class="ed-cards">
+  <a class="ed-card" href="{{ '/projects/physics-based-ml-2d-lower-hybrid-wave-tst2/' | relative_url }}">
+    <img src="{{ '/assets/img/TST2.jpeg' | relative_url }}" alt="TST-2 Spherical Tokamak">
+    <div class="ed-card-body">
+      <div class="ed-card-kicker">PHD RESEARCH · UTOKYO</div>
+      <div class="ed-card-title">Physics-based ML Scheme for Accelerating 2D Lower-Hybrid Wave Simulation on TST-2</div>
+      <p class="ed-card-desc">Physics-Informed Neural Operator surrogate for lower hybrid waves — 281.8× faster inference in rectangular domains, 25.8× in TST-2 circular geometry, within a 498 MB footprint.</p>
+      <div class="ed-card-more">Read more →</div>
+    </div>
   </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+  <a class="ed-card" href="{{ '/projects/pretrained-fourier-neural-operator-for-non-newtonian-fluid-dynamics/' | relative_url }}">
+    <img src="{{ '/assets/img/cae.jpg' | relative_url }}" alt="Mold flow analysis">
+    <div class="ed-card-body">
+      <div class="ed-card-kicker">OPERATOR LEARNING</div>
+      <div class="ed-card-title">Pretrained Fourier Neural Operator for Non-Newtonian Fluid Dynamics</div>
+      <p class="ed-card-desc">FNO surrogate for mold-flow analysis in Moldex3D — predicting pressure (MAE &lt; 3 Pa) and melt front time (MAE &lt; 0.3 s).</p>
+      <div class="ed-card-more">Read more →</div>
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-<!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-<div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+  </a>
+  <a class="ed-card" href="{{ '/projects/regression-based-physics-informed-neural-networks-for-magentopause-tracking/' | relative_url }}">
+    <img src="{{ '/assets/img/mag.jpg' | relative_url }}" alt="Magnetopause tracking">
+    <div class="ed-card-body">
+      <div class="ed-card-kicker">SPACE PHYSICS · PUBLISHED</div>
+      <div class="ed-card-title">Reg-PINNs for Magnetopause Tracking</div>
+      <p class="ed-card-desc">Regression-based Physics-Informed Neural Networks combining empirical models with deep learning — ~30% RMSE reduction vs. Shue et al. [1998].</p>
+      <div class="ed-card-more">Read more →</div>
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+  </a>
+  <a class="ed-card" href="{{ '/projects/parallel-computing-with-applications-in-quantitative-strategies/' | relative_url }}">
+    <img src="{{ '/assets/img/CCON.png' | relative_url }}" alt="Parallel computing benchmark">
+    <div class="ed-card-body">
+      <div class="ed-card-kicker">HPC</div>
+      <div class="ed-card-title">Parallel Computing, with Applications in Quantitative Strategies</div>
+      <p class="ed-card-desc">Multicore benchmarking of a volatility-momentum equity strategy on an HPC cluster.</p>
+      <div class="ed-card-more">Read more →</div>
+    </div>
+  </a>
 </div>
