@@ -574,6 +574,23 @@ $ed-gutter: 64px;
     color: var(--ed-secondary);
     line-height: 1.6;
   }
+  .ed-cv-deliverables {
+    margin: 8px 0 0;
+    padding-left: 1.2em;
+    list-style: disc;
+    font-family: $ed-sans;
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ed-muted);
+
+    li {
+      margin-bottom: 3px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
   .ed-cv-single {
     font-size: 17px;
     line-height: 1.5;

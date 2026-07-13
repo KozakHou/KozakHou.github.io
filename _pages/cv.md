@@ -61,7 +61,12 @@ nav_order: 7
       <div class="ed-cv-date">2025 - Present</div>
       <div>
         <div class="ed-cv-title">Full Stack Software Engineer (FDE) — XingAn Clinic</div>
-        <div class="ed-cv-detail">End-to-end clinic booking and queue management system with LINE chatbot; AI-assisted clinical pipeline (ASR + summarization) on a privacy-aware, event-driven backend. Yunlin, TW.</div>
+        <div class="ed-cv-detail">End-to-end clinic booking and queue management system with LINE chatbot; AI-assisted clinical pipeline (ASR + summarization) on a privacy-aware, event-driven backend.
+          <ul class="ed-cv-deliverables">
+            <li>Dynamic patient registration cutoff optimization</li>
+            <li>Server redesign, deployment, and monitoring</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="ed-cv-row">
@@ -75,14 +80,27 @@ nav_order: 7
       <div class="ed-cv-date">2023 - 2024</div>
       <div>
         <div class="ed-cv-title">Software R&amp;D Intern — Moldex3D (CoreTech)</div>
-        <div class="ed-cv-detail">Integrated neural operators (PINN, FNO) into a production simulation API — ~2000× speedup (hours → seconds) with &lt;3% error. Hsinchu, TW.</div>
+        <div class="ed-cv-detail">Integrated neural operators (PINN, FNO) into a production simulation API: ~2000× speedup (hours → seconds) with less than 3% error; delivered a prototype neural-operator solution for plastic molding simulation.</div>
+      </div>
+    </div>
+    <div class="ed-cv-row">
+      <div class="ed-cv-date">2021 - 2023</div>
+      <div>
+        <div class="ed-cv-title">Undergraduate Research Assistant — Space Environment Laboratory (NCU)</div>
+        <div class="ed-cv-detail">Developed machine learning and numerical solutions for space physics.
+          <ul class="ed-cv-deliverables">
+            <li>Space weather: magnetopause modelling with physics-based machine learning</li>
+            <li>Remote sensing: particulate matter (PM0.3, PM2.5) interpolation with spatial random forest — enhanced spatiotemporal resolution (1 hr → 10 min, 12× sampling rate); RMSE 11.65 → 0.62 [AI Space Challenge]</li>
+            <li>Satellite maneuver: numerical and ML/NN simulation for CubeSat ADCS</li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="ed-cv-row">
       <div class="ed-cv-date">2022</div>
       <div>
         <div class="ed-cv-title">Deep Learning Research Intern — <br>National Center for High Performance Computing</div>
-        <div class="ed-cv-detail">Benchmarked PINN, DeepONet and FNO models on Xeon clusters and NVIDIA A100 DGX; modular TensorFlow implementation of FNO. Supervisor: Dr. Chun-Yu Lin. Hsinchu, TW.</div>
+        <div class="ed-cv-detail">Benchmarked PINN, DeepONet, and FNO models on Xeon clusters and NVIDIA A100 DGX; modular TensorFlow implementation of FNO, including a first TensorFlow-based neural operator demo on MNIST/CIFAR-10 and a physics-informed neural network for the advection–diffusion equation.</div>
       </div>
     </div>
 
