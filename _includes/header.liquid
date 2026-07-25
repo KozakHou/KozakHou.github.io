@@ -1,19 +1,22 @@
 <header class="ed-nav">
-  <a class="ed-brand" href="{{ '/' | relative_url }}">
-    PoHan (Kozak) Hou <span class="ed-brand-cjk">侯博瀚</span>
-  </a>
-  <nav class="ed-navlinks">
-    <a href="{{ '/' | relative_url }}" class="{% if page.ed_active == 'about' %}active{% endif %}">About</a>
-    <a href="{{ '/consulting/' | relative_url }}" class="{% if page.ed_active == 'consulting' %}active{% endif %}">Consulting</a>
-    <a href="{{ '/projects/' | relative_url }}" class="{% if page.ed_active == 'research' %}active{% endif %}">Research</a>
-    <a href="{{ '/publications/' | relative_url }}" class="{% if page.ed_active == 'publications' %}active{% endif %}">Publications</a>
-    <a href="{{ '/CV/' | relative_url }}" class="{% if page.ed_active == 'cv' %}active{% endif %}">CV</a>
-    {% if site.enable_darkmode %}
-      <button id="light-toggle" class="ed-theme-toggle" title="Change theme" aria-label="Toggle theme">
-        <i class="ti ti-sun-moon" id="light-toggle-system"></i>
-        <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-        <i class="ti ti-sun-filled" id="light-toggle-light"></i>
-      </button>
-    {% endif %}
-  </nav>
+  <div class="ed-nav-inner">
+    <a class="ed-brand" href="{{ '/' | relative_url }}">
+      <span>Kozak Hou</span>
+      <small>侯博瀚 · Numeric/Modelling/Fusion/SciML</small>
+    </a>
+    <nav class="ed-navlinks" aria-label="Primary navigation">
+      <a href="{{ '/' | relative_url }}" class="{% if page.ed_active == 'about' %}active{% endif %}">about</a>
+      <a href="{{ '/projects/' | relative_url }}" class="{% if page.ed_active == 'research' %}active{% endif %}">research</a>
+      <a href="{{ '/consulting/' | relative_url }}" class="{% if page.ed_active == 'consulting' %}active{% endif %}">consulting</a>
+      <a href="{{ '/publications/' | relative_url }}" class="{% if page.ed_active == 'publications' %}active{% endif %}">papers</a>
+      <a href="{{ '/CV/' | relative_url }}" class="{% if page.ed_active == 'cv' %}active{% endif %}">cv</a>
+      {% if site.enable_darkmode %}
+        <button id="light-toggle" class="ed-theme-toggle" title="Change theme" aria-label="Toggle theme">
+          <i class="ti ti-sun-moon" id="light-toggle-system"></i>
+          <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
+          <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+        </button>
+      {% endif %}
+    </nav>
+  </div>
 </header>

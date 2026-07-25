@@ -8,118 +8,105 @@ keywords: Scientific AI, HPC Consulting, Scientific Machine Learning, Physics-In
 nav_order: 2
 ---
 
-<div class="ed-hero-grid">
-  <div class="ed-hero-main">
-    <div class="ed-kicker">SCIENTIFIC AI × HPC</div>
-    <h1 class="ed-h1">Consulting</h1>
-    <p class="ed-lede">Helping engineering teams accelerate scientific simulations with AI — physics-informed machine learning, neural-operator surrogates, and high-performance computing workflows.</p>
-  </div>
-  <aside class="ed-hero-aside">
-    <div class="ed-tree" id="ed-tree" aria-label="Track record">
-      <span class="ed-label">TRACK RECORD</span>
-      <div class="ed-tree-detail" id="ed-tree-detail" aria-live="polite">Hover a result to read the full explanation.</div>
-      <div class="ed-tree-diagram">
-        <div class="ed-tree-root">Results</div>
-        <div class="ed-tree-trunk" aria-hidden="true"></div>
-        <div class="ed-tree-branches">
-          <div
-            class="ed-tree-leaf"
-            tabindex="0"
-            data-detail="Simulation speedup at Moldex3D — hours to seconds under less than 3% error"
-          >
-            <div class="ed-tree-num">1997.2×</div>
-            <div class="ed-tree-tag">Moldex3D</div>
-            <div class="ed-tree-fallback">Simulation speedup at Moldex3D — hours to seconds under less than 3% error</div>
-          </div>
-          <div
-            class="ed-tree-leaf"
-            tabindex="0"
-            data-detail="NeurIPS 2024 ML4CFD Competition — top 1% of 254 teams"
-          >
-            <div class="ed-tree-num">3rd place</div>
-            <div class="ed-tree-tag">NeurIPS ML4CFD</div>
-            <div class="ed-tree-fallback">NeurIPS 2024 ML4CFD Competition — top 1% of 254 teams</div>
-          </div>
-          <div
-            class="ed-tree-leaf"
-            tabindex="0"
-            data-detail="Faster lower-hybrid-wave inference with a neural-operator surrogate"
-          >
-            <div class="ed-tree-num">281.8×</div>
-            <div class="ed-tree-tag">Plasma Wave Surrogates</div>
-            <div class="ed-tree-fallback">Faster LH Wave inference with a neural operator surrogate</div>
-          </div>
-        </div>
-   
+<div class="personal-consulting">
+  <section class="consulting-intro" aria-labelledby="consulting-title">
+    <div>
+      <p class="personal-location">Scientific AI &amp; HPC consulting</p>
+      <h1 id="consulting-title">Is your simulation too slow?</h1>
+    </div>
+    <div class="consulting-intro-copy">
+      <p class="personal-lede">I help engineering teams decide whether scientific machine learning can make a simulator fast enough—and build a validated prototype when it can.</p>
+      <p>My work covers neural operators, physics-informed methods, surrogate modeling, GPU optimisation, and high-performance computing for CFD, plasma, electromagnetic, heat-transfer, and multiphysics problems.</p>
+      <a class="personal-text-link" href="mailto:kozak20010716@gmail.com">Tell me about your simulation <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="consulting-results" aria-labelledby="results-title">
+    <div class="personal-section-mark">A few results</div>
+    <h2 id="results-title" class="sr-only">Selected consulting and research results</h2>
+    <div class="consulting-result-list">
+      <div>
+        <strong>1997.2×</strong>
+        <p>Moldex3D simulation speedup: hours to seconds with less than 3% error.</p>
+      </div>
+      <div>
+        <strong>281.8×</strong>
+        <p>Faster lower-hybrid-wave inference in a rectangular domain; 25.8× in TST-2 circular geometry.</p>
+      </div>
+      <div>
+        <strong>3rd / 254</strong>
+        <p>NeurIPS 2024 ML4CFD Competition, with the highest ML score among participants.</p>
       </div>
     </div>
-  </aside>
-</div>
+  </section>
 
-<div class="ed-bands">
-  <div class="ed-band">
-    <span class="ed-label">EXPERTISE</span>
-    <div class="ed-band-list">
-      <span>Physics-informed machine learning</span>
-      <span>Neural operators</span>
-      <span>Surrogate modeling</span>
-      <span>GPU optimization</span>
-      <span>Digital twins</span>
-      <span>Scientific AI &amp; HPC</span>
-    </div>
-  </div>
-  <div class="ed-band">
-    <span class="ed-label">EXAMPLE PROBLEMS</span>
-    <div class="ed-band-list">
-      <span>CFD acceleration</span>
-      <span>Neural surrogates</span>
-      <span>Plasma simulation</span>
-      <span>Electromagnetic simulation</span>
-      <span>Heat transfer</span>
-      <span>Multiphysics workflows</span>
-    </div>
-  </div>
-  <div class="ed-band">
-    <span class="ed-label">ENGAGEMENT</span>
-    <div class="ed-band-list">
-      <span>Feasibility study</span>
-      <span>Prototype development</span>
-      <span>Technical consulting</span>
-      <span>Research collaboration</span>
-    </div>
-  </div>
-</div>
+  <section class="consulting-problems" aria-labelledby="problems-title">
+    <header>
+      <div class="personal-section-mark">Good problems to bring me</div>
+      <h2 id="problems-title">The expensive, awkward, not-quite-production-ready ones.</h2>
+    </header>
+    <ul>
+      <li>A numerical solver that takes too long to run.</li>
+      <li>A parameter sweep that is too expensive to repeat.</li>
+      <li>A surrogate that is fast but not yet trustworthy.</li>
+      <li>A workflow that needs better use of GPUs or a compute cluster.</li>
+      <li>A CFD, plasma, electromagnetic, heat-transfer, or multiphysics model that may benefit from operator learning.</li>
+    </ul>
+  </section>
 
-<div class="ed-how">
-  <span class="ed-label">HOW IT WORKS</span>
-  <div class="ed-how-grid">
-    <div class="ed-step">
-      <div class="ed-step-num">01</div>
-      <div class="ed-step-title">Scope</div>
-      <div class="ed-step-desc">Share your solver, geometry, and runtime. We define what "fast enough" means and where the bottleneck lives.</div>
-    </div>
-    <div class="ed-step">
-      <div class="ed-step-num">02</div>
-      <div class="ed-step-title">Feasibility</div>
-      <div class="ed-step-desc">An honest read on whether an AI surrogate can help — and where classical HPC is the better answer.</div>
-    </div>
-    <div class="ed-step">
-      <div class="ed-step-num">03</div>
-      <div class="ed-step-title">Prototype</div>
-      <div class="ed-step-desc">Build and validate a neural-operator surrogate against your reference data, with error budgets you can trust.</div>
-    </div>
-    <div class="ed-step">
-      <div class="ed-step-num">04</div>
-      <div class="ed-step-title">Handoff</div>
-      <div class="ed-step-desc">Benchmark, integrate into your pipeline, and transfer the models, code, and know-how to your team.</div>
-    </div>
-  </div>
-</div>
+  <section class="consulting-process" aria-labelledby="process-title">
+    <header>
+      <div class="personal-section-mark">How we would work</div>
+      <h2 id="process-title">Start with the real problem.</h2>
+    </header>
+    <ol>
+      <li>
+        <span>1</span>
+        <div>
+          <h3>Send the solver, not a pitch deck.</h3>
+          <p>Share the geometry, current runtime, available reference data, and what “fast enough” means for your team.</p>
+        </div>
+      </li>
+      <li>
+        <span>2</span>
+        <div>
+          <h3>Check feasibility.</h3>
+          <p>I assess whether a neural surrogate is appropriate—and say when classical HPC is the better answer.</p>
+        </div>
+      </li>
+      <li>
+        <span>3</span>
+        <div>
+          <h3>Build and test a prototype.</h3>
+          <p>The surrogate is benchmarked against reference data with an explicit error budget.</p>
+        </div>
+      </li>
+      <li>
+        <span>4</span>
+        <div>
+          <h3>Hand it over.</h3>
+          <p>Your team receives the model, code, benchmarks, integration guidance, and technical context needed to continue.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-<div class="ed-cta-row">
-  <div>
-    <div class="ed-cta-head">Have a simulation that's too slow?</div>
-    <div class="ed-cta-sub">Tell me about your solver, geometry, and runtime — I'll reply with an honest read on whether an AI surrogate can help.</div>
-  </div>
-  <a class="ed-btn" href="mailto:kozak20010716@gmail.com">kozak20010716@gmail.com</a>
+  <section class="consulting-modes" aria-labelledby="modes-title">
+    <div>
+      <div class="personal-section-mark">Ways to work together</div>
+      <h2 id="modes-title">Small enough to test. Serious enough to trust.</h2>
+    </div>
+    <p>Feasibility study · Prototype development · Technical consulting · Research collaboration</p>
+  </section>
+
+  <section class="personal-signoff consulting-signoff" aria-labelledby="consulting-signoff-title">
+    <div>
+      <div class="personal-section-mark">First step</div>
+      <h2 id="consulting-signoff-title">Start with an email.</h2>
+      <p>Tell me what runs slowly and what a useful result would look like. I’ll reply with an honest first read.</p>
+    </div>
+    <div class="personal-signoff-links">
+      <a href="mailto:kozak20010716@gmail.com">kozak20010716@gmail.com <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
 </div>
