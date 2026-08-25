@@ -9,11 +9,20 @@ nav_order: 4
 
 <div class="ed-research-head">
   <p class="personal-location">Research &amp; projects</p>
-  <h1 class="ed-h1">Four problems I kept coming back to.</h1>
+  <h1 class="ed-h1">Some problems I kept coming back to.</h1>
   <p class="ed-sub">A mix of fusion physics, fluid dynamics, space science, and the compute needed to make them practical.</p>
 </div>
 
 <div class="ed-cards">
+  <a class="ed-card" href="{{ '/projects/high-frequency-plasma-wave-surrogates/' | relative_url }}">
+    <img src="{{ '/assets/img/TST2.jpeg' | relative_url }}" alt="TST-2 Spherical Tokamak">
+    <div class="ed-card-body">
+      <div class="ed-card-kicker">Tokyo · Ongoing research</div>
+      <div class="ed-card-title">High-Frequency Plasma Wave Surrogates</div>
+      <p class="ed-card-desc">Neural-operator surrogates for high-frequency RF wave propagation in tokamak plasmas, focused on highly oscillatory complex fields and phase accuracy.</p>
+      <div class="ed-card-more">Read the project →</div>
+    </div>
+  </a>
   <a class="ed-card" href="{{ '/projects/physics-based-ml-2d-lower-hybrid-wave-tst2/' | relative_url }}">
     <img src="{{ '/assets/img/TST2.jpeg' | relative_url }}" alt="TST-2 Spherical Tokamak">
     <div class="ed-card-body">
