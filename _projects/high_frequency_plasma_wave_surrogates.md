@@ -5,19 +5,19 @@ ed_article: true
 title: High-Frequency Plasma Wave Surrogates
 description: Ongoing neural-operator research on surrogate modeling of high-frequency RF wave propagation in tokamak plasmas, with an emphasis on highly oscillatory complex fields and phase accuracy.
 keywords: High-Frequency Plasma Waves, Neural Operator, Complex Fields, Phase Learning, Tokamak, Plasma, Nuclear Fusion, Scientific Computing, Scientific Machine Learning
-og_image: /assets/img/TST2.jpeg
-img: assets/img/TST2.jpeg
+og_image: /assets/img/teaser4mcno.png
+img: assets/img/teaser4mcno.png
 permalink: /projects/high-frequency-plasma-wave-surrogates/
 importance: 1
 ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/TST2.jpeg" title="TST-2 Tokamak" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/teaser4mcno.png" title="TST-2 Tokamak" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    TST-2 Spherical Tokamak
+    Surrogate model for high-frequency RF wave propagation in tokamak plasmas.
 </div>
 
 ## Overview
