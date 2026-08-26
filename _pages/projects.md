@@ -15,7 +15,7 @@ nav_order: 4
 
 <div class="ed-cards">
   <a class="ed-card" href="{{ '/projects/high-frequency-plasma-wave-surrogates/' | relative_url }}">
-    <img src="{{ '/assets/img/TST2.jpeg' | relative_url }}" alt="TST-2 Spherical Tokamak">
+    <img src="{{ '/assets/img/teaser4mcno.png' | relative_url }}" alt="TST-2 Spherical Tokamak">
     <div class="ed-card-body">
       <div class="ed-card-kicker">Tokyo · Ongoing research</div>
       <div class="ed-card-title">High-Frequency Plasma Wave Surrogates</div>
@@ -53,7 +53,7 @@ nav_order: 4
   <a class="ed-card" href="{{ '/projects/parallel-computing-with-applications-in-quantitative-strategies/' | relative_url }}">
     <img src="{{ '/assets/img/CCON.png' | relative_url }}" alt="Parallel computing benchmark">
     <div class="ed-card-body">
-      <div class="ed-card-kicker">London · High-performance computing</div>
+      <div class="ed-card-kicker">Stanford · High-performance computing</div>
       <div class="ed-card-title">Parallel Computing, with Applications in Quantitative Strategies</div>
       <p class="ed-card-desc">Multicore benchmarking of a volatility-momentum equity strategy on an HPC cluster.</p>
       <div class="ed-card-more">Read the project →</div>
