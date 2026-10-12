@@ -53,6 +53,9 @@ nav_order: 1
       neural operators<br>
       a lot of profiler output
     </aside>
+    <figure class="personal-now-figure">
+      <iframe src="{{ '/tokamak/embed.html' | relative_url }}" title="Interactive cutaway of the TST-2 spherical tokamak stepping through a plasma discharge" loading="lazy"></iframe>
+    </figure>
   </section>
 
   <section class="personal-work" aria-labelledby="work-title">
@@ -123,16 +126,14 @@ nav_order: 1
       </li>
     </ol>
   </section>
-
-  <section class="personal-signoff" aria-labelledby="signoff-title">
-    <div>
-      <div class="personal-section-mark">Work with me</div>
-      <h2 id="signoff-title">Have a simulation that takes too long?</h2>
-      <p>Send me the solver, geometry, runtime, and the bottleneck you care about. I’ll give you an honest first read on whether scientific ML or classical HPC is the better answer.</p>
-    </div>
-    <div class="personal-signoff-links">
-      <a href="{{ '/consulting/' | relative_url }}">Consulting details <span aria-hidden="true">→</span></a>
-      <a href="mailto:kozak20010716@gmail.com">kozak20010716@gmail.com</a>
-    </div>
-  </section>
 </div>
+
+<script>
+  // The tokamak figure reports its height so the frame fits it exactly.
+  window.addEventListener("message", function (event) {
+    var frame = document.querySelector(".personal-now-figure iframe");
+    if (!frame || event.source !== frame.contentWindow || !event.data || event.data.type !== "tokamak-embed") return;
+    var height = Number(event.data.height);
+    if (height > 200 && height < 2400) frame.style.height = height + "px";
+  });
+</script>

@@ -310,6 +310,20 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
   }
 }
 
+.personal-now-figure {
+  grid-column: 2;
+  width: min(100%, 680px);
+  margin: -20px 0 0;
+
+  iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 640 / 700;
+    border: 0;
+    background: transparent;
+  }
+}
+
 .personal-desk-note {
   padding: 15px 0 0 17px;
   border-left: 2px solid #c77b55;
@@ -968,6 +982,7 @@ a.ed-card {
 }
 
 @media (max-width: 900px) {
+
   .ed-nav-inner {
     align-items: flex-start;
   }
@@ -1026,6 +1041,11 @@ a.ed-card {
 }
 
 @media (max-width: 700px) {
+  .personal-now-figure {
+    grid-column: 1;
+    margin-top: 0;
+  }
+
   .ed-nav-inner {
     padding-top: 18px;
     padding-bottom: 17px;
