@@ -303,6 +303,10 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "jstarx-2026-a7k4p"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
@@ -312,7 +316,7 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt", "assets/js/search/*.js", "tokamak/*"]
+  exclude: ["robots.txt", "assets/js/search/*.js", "tokamak/*", "jstarx-2026-a7k4p/*"]
   uglifier_args:
     harmony: true
 

@@ -1,0 +1,105 @@
+---
+layout: editorial
+title: Server Ant — J-StarX UK Pitch Deck
+permalink: /jstarx-2026-a7k4p/
+description: Server Ant pitch deck for J-StarX UK 2026.
+noindex: true
+sitemap: false
+---
+
+<style>
+  .jsx-deck {
+    width: min(100%, 1180px);
+    margin: 0 auto;
+    padding: 0 clamp(16px, 4.5vw, 64px) clamp(70px, 8vw, 104px);
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  .jsx-slide {
+    position: relative;
+    margin: 0;
+    background: #fff;
+    border: 1px solid var(--personal-line);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .jsx-slide canvas { display: block; width: 100%; height: auto; }
+  .jsx-num {
+    position: absolute; right: 10px; bottom: 8px;
+    font-size: 11px; color: #666;
+    background: rgba(255,255,255,.85); padding: 2px 7px; border-radius: 4px;
+  }
+  .jsx-status { color: var(--personal-muted); }
+  .jsx-fallback { width: 100%; height: 80vh; border: 1px solid var(--personal-line); border-radius: 6px; }
+</style>
+
+<div class="ed-research-head">
+  <p class="personal-location">Pitch deck · J-StarX UK 2026</p>
+  <h1 class="ed-h1">Server Ant</h1>
+  <p class="ed-sub">J-StarX UK pitch deck — six slides, by PoHan (Kozak) Hou.</p>
+  <nav class="personal-inline-links" aria-label="Pitch deck links">
+    <a href="Server_Ant_JSTARX_Fusion_2026.pdf" target="_blank" rel="noopener">View PDF</a>
+    <a href="Server_Ant_JSTARX_Fusion_2026.pdf" download>Download PDF</a>
+    <a href="{{ '/' | relative_url }}">About me</a>
+    <a href="{{ '/CV/' | relative_url }}">CV</a>
+  </nav>
+</div>
+
+<section id="jsx-deck" class="jsx-deck" aria-label="Pitch deck slides">
+  <p class="jsx-status" id="jsx-status">Loading slides…</p>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" integrity="sha384-/1qUCSGwTur9vjf/z9lmu/eCUYbpOTgSjmpbMQZ1/CtX2v/WcAIKqRv+U1DUCG6e" crossorigin="anonymous"></script>
+<script>
+  (function () {
+    var PDF_URL = "Server_Ant_JSTARX_Fusion_2026.pdf";
+    var deck = document.getElementById("jsx-deck");
+    var status = document.getElementById("jsx-status");
+
+    // If pdf.js can't load or render, fall back to the browser's own PDF viewer.
+    function fallback() {
+      deck.innerHTML =
+        '<object class="jsx-fallback" data="' + PDF_URL + '" type="application/pdf">' +
+        '<p class="jsx-status">Your browser cannot display the PDF inline. ' +
+        '<a href="' + PDF_URL + '">Open the PDF</a>.</p></object>';
+    }
+
+    if (!window.pdfjsLib) { fallback(); return; }
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+    pdfjsLib.getDocument(PDF_URL).promise.then(function (pdf) {
+      status.remove();
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var chain = Promise.resolve();
+      for (var i = 1; i <= pdf.numPages; i++) {
+        (function (n) {
+          chain = chain.then(function () {
+            return pdf.getPage(n).then(function (page) {
+              // Render at least ~2000px wide so slides stay sharp on large screens.
+              var base = page.getViewport({ scale: 1 });
+              var scale = Math.max(2000 / base.width, (deck.clientWidth * dpr) / base.width);
+              var viewport = page.getViewport({ scale: scale });
+              var fig = document.createElement("figure");
+              fig.className = "jsx-slide";
+              var canvas = document.createElement("canvas");
+              canvas.width = Math.floor(viewport.width);
+              canvas.height = Math.floor(viewport.height);
+              canvas.setAttribute("role", "img");
+              canvas.setAttribute("aria-label", "Slide " + n + " of " + pdf.numPages);
+              var num = document.createElement("span");
+              num.className = "jsx-num";
+              num.textContent = n + " / " + pdf.numPages;
+              fig.appendChild(canvas);
+              fig.appendChild(num);
+              deck.appendChild(fig);
+              return page.render({ canvasContext: canvas.getContext("2d"), viewport: viewport }).promise;
+            });
+          });
+        })(i);
+      }
+      return chain;
+    }).catch(fallback);
+  })();
+</script>
