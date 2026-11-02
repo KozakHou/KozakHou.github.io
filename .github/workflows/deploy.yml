@@ -7,6 +7,8 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "_plugins/**"
       - "**.html"
       - "**.js"
       - "**.liquid"
@@ -23,6 +25,8 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
+      - "_plugins/**"
       - "**.html"
       - "**.js"
       - "**.liquid"
@@ -64,7 +68,7 @@ jobs:
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
-          npm install -g purgecss
+          npm install -g purgecss@8.0.0
           purgecss -c purgecss.config.js
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'

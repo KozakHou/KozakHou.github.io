@@ -52,7 +52,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
   color: var(--personal-paper);
   font-family: $personal-sans;
   transition: none;
-  transform: translateY(calc(-100% - 16px));
+  transform: translateY(-160%);
 
   &:focus {
     transform: translateY(0);
@@ -327,7 +327,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
   padding: clamp(48px, 6vw, 76px) 0;
   border-top: 1px solid var(--personal-line);
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr) 210px;
+  grid-template-columns: 150px minmax(0, 1fr);
   gap: clamp(28px, 5vw, 68px);
   align-items: start;
 
@@ -366,28 +366,6 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
     aspect-ratio: 640 / 700;
     border: 0;
     background: transparent;
-  }
-}
-
-.personal-desk-note {
-  padding: 15px 0 0;
-  border-top: 1px solid var(--personal-line);
-  font-family: $personal-serif;
-  font-size: 15px;
-  line-height: 1.65;
-  font-style: italic;
-  color: var(--personal-body);
-
-  span {
-    display: block;
-    margin-bottom: 7px;
-    font-family: $personal-sans;
-    font-size: 10.5px;
-    line-height: 1.4;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-style: normal;
-    color: var(--personal-muted);
   }
 }
 
@@ -1051,12 +1029,6 @@ a.ed-card {
 
   .personal-now {
     grid-template-columns: 110px minmax(0, 1fr);
-
-    .personal-desk-note {
-      grid-column: 2;
-      width: min(100%, 310px);
-      margin-top: 8px;
-    }
   }
 
   .personal-section-heading {
@@ -1152,10 +1124,6 @@ a.ed-card {
   .personal-section-heading {
     grid-template-columns: 1fr;
     gap: 17px;
-  }
-
-  .personal-now .personal-desk-note {
-    grid-column: 1;
   }
 
   .personal-project {

@@ -8,9 +8,11 @@ module Jekyll
 
       attr_accessor :file_name, :directory
 
-      def initialize(file_name:, directory: nil)
+      def initialize(file_name:, directory: nil, source: Dir.pwd, baseurl: '')
         self.file_name = file_name
         self.directory = directory
+        @source = source
+        @baseurl = baseurl.to_s.sub(%r{/$}, '')
       end
 
       def digest!
@@ -20,13 +22,18 @@ module Jekyll
       private
 
       def directory_files_content
-        target_path = File.join(directory, '**', '*')
-        Dir[target_path].map{|f| File.read(f) unless File.directory?(f) }.join
+        Array(directory).flat_map do |entry|
+          path = File.join(@source, entry)
+          File.directory?(path) ? Dir[File.join(path, '**', '*')] : [path]
+        end.select { |path| File.file?(path) }.sort.map { |path| File.binread(path) }.join("\0")
       end
 
       def file_content
-        local_file_name = file_name.slice((file_name.index('assets/')..-1))
-        File.read(local_file_name)
+        local_file_name = file_name.split('?').first
+        if !@baseurl.empty? && local_file_name.start_with?(@baseurl + '/')
+          local_file_name = local_file_name.delete_prefix(@baseurl)
+        end
+        File.binread(File.join(@source, local_file_name.delete_prefix('/')))
       end
 
       def file_contents
@@ -39,11 +46,18 @@ module Jekyll
     end
 
     def bust_file_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: nil).digest!
+      site = @context.registers[:site]
+      CacheDigester.new(file_name: file_name, source: site.source, baseurl: site.config['baseurl']).digest!
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      site = @context.registers[:site]
+      sass_dir = site.config.fetch('sass', {}).fetch('sass_dir', '_sass')
+      CacheDigester.new(
+        file_name: file_name,
+        source: site.source,
+        directory: [sass_dir, 'assets/css', '_config.yml']
+      ).digest!
     end
   end
 end

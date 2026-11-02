@@ -47,14 +47,8 @@ nav_order: 1
       </p>
       <a class="personal-text-link" href="{{ '/projects/physics-based-ml-2d-lower-hybrid-wave-tst2/' | relative_url }}">Read the project <span aria-hidden="true">↗</span></a>
     </div>
-    <aside class="personal-desk-note">
-      <span>On the desk</span>
-      TST-2 geometry<br>
-      neural operators<br>
-      a lot of profiler output
-    </aside>
     <figure class="personal-now-figure">
-      <iframe src="{{ '/tokamak/embed.html' | relative_url }}" title="Interactive cutaway of the TST-2 spherical tokamak stepping through a plasma discharge" loading="lazy"></iframe>
+      <iframe src="{{ '/tokamak/embed.html' | relative_url | bust_file_cache }}" title="Interactive cutaway of the TST-2 spherical tokamak stepping through a plasma discharge" loading="lazy"></iframe>
     </figure>
   </section>
 

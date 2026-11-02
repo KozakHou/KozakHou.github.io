@@ -316,6 +316,8 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
+  # Sass already compresses CSS; cssminify2 can corrupt modern calc() syntax.
+  compress_css: false
   exclude: ["robots.txt", "assets/js/search/*.js", "tokamak/*", "jstarx-2026-a7k4p/*"]
   uglifier_args:
     harmony: true
