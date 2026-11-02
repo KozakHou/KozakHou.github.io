@@ -33,7 +33,7 @@ nav_order: 1
     </div>
 
     <figure class="personal-portrait">
-      <img src="{{ '/assets/img/selfie.jpg' | relative_url }}" alt="Kozak Hou outdoors, with Florence in the background">
+      <img src="{{ '/assets/img/selfie.webp' | relative_url }}" width="768" height="1024" fetchpriority="high" decoding="async" alt="Kozak Hou outdoors, with Florence in the background">
       <figcaption>Florence, Italy, 2025</figcaption>
     </figure>
   </section>
@@ -75,7 +75,7 @@ nav_order: 1
           <p>A physics-informed neural-operator surrogate for TST-2, with a 498 MB footprint and up to 281.8× faster inference.</p>
           <span>PhD research · fusion plasma</span>
         </div>
-        <img src="{{ '/assets/img/TST2.jpeg' | relative_url }}" alt="TST-2 spherical tokamak">
+        <img src="{{ '/assets/img/TST2.webp' | relative_url }}" width="880" height="660" loading="lazy" decoding="async" alt="TST-2 spherical tokamak">
       </a>
 
       <a class="personal-project" href="{{ '/projects/pretrained-fourier-neural-operator-for-non-newtonian-fluid-dynamics/' | relative_url }}">
@@ -85,7 +85,7 @@ nav_order: 1
           <p>A Fourier neural operator for non-Newtonian fluid dynamics, tested against a production simulation workflow at under 3% error.</p>
           <span>Industry R&amp;D · operator learning</span>
         </div>
-        <img src="{{ '/assets/img/cae.jpg' | relative_url }}" alt="Mold-flow analysis result">
+        <img src="{{ '/assets/img/cae.webp' | relative_url }}" width="885" height="646" loading="lazy" decoding="async" alt="Mold-flow analysis result">
       </a>
 
       <a class="personal-project" href="{{ '/projects/regression-based-physics-informed-neural-networks-for-magentopause-tracking/' | relative_url }}">
@@ -95,7 +95,7 @@ nav_order: 1
           <p>Reg-PINNs combine an empirical physics model with a neural network and reduce RMSE by roughly 30% over Shue et al. [1998].</p>
           <span>Published research · space physics</span>
         </div>
-        <img src="{{ '/assets/img/mag.jpg' | relative_url }}" alt="Magnetopause simulation">
+        <img src="{{ '/assets/img/mag.jpg' | relative_url }}" width="316" height="160" loading="lazy" decoding="async" alt="Magnetopause simulation">
       </a>
     </div>
 
@@ -104,7 +104,6 @@ nav_order: 1
 
   <section class="personal-coordinates" aria-labelledby="coordinates-title">
     <header>
-      <div class="personal-section-mark">A few coordinates</div>
       <h2 id="coordinates-title">Taiwan → London → Tokyo</h2>
       <p>The subjects changed along the way. The habit of moving between physics and software did not.</p>
     </header>

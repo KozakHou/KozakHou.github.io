@@ -10,14 +10,6 @@
   crossorigin="anonymous"
 >
 
-<!-- FullCalendar CSS -->
-<link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css' rel='stylesheet' />
-
-<!-- FullCalendar JavaScript -->
-<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/locales-all.min.js'></script>
-
-
 <!-- Bootstrap Table -->
 {% if page.pretty_table %}
   <link
@@ -37,12 +29,14 @@
   rel="stylesheet"
 >
 <link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
+{% unless page.layout == 'editorial' %}
 <link
   defer
   rel="stylesheet"
   type="text/css"
   href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
 >
+{% endunless %}
 
 <!-- Code Syntax Highlighting -->
 <link

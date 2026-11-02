@@ -16,16 +16,50 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
   --personal-paper-deep: #dfe8ea;
   --personal-ink: #20231f;
   --personal-body: #44483f;
-  --personal-muted: #77796f;
+  --personal-muted: #5d6865;
   --personal-line: #cbd8db;
   --personal-green: #285e50;
   --personal-green-dark: #18463d;
   --personal-rust: #a94e2f;
+
+  // Long-form pages and the personal layer share one surface and palette.
+  --ed-bg: var(--personal-paper);
+  --ed-text: var(--personal-ink);
+  --ed-body: var(--personal-body);
+  --ed-secondary: var(--personal-body);
+  --ed-muted: var(--personal-muted);
+  --ed-accent: var(--personal-green);
+  --ed-accent-strong: var(--personal-green-dark);
+  --ed-border: var(--personal-line);
+  --ed-brand-sub: var(--personal-muted);
 }
 
 .ed-page-body {
   margin: 0;
+  padding: 0;
   background: var(--personal-paper);
+  color-scheme: light;
+  scrollbar-color: var(--personal-muted) var(--personal-paper);
+}
+
+.ed-skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 12px;
+  left: 12px;
+  padding: 12px 18px;
+  background: var(--personal-green-dark);
+  color: var(--personal-paper);
+  font-family: $personal-sans;
+  transition: none;
+  transform: translateY(calc(-100% - 16px));
+
+  &:focus {
+    transform: translateY(0);
+    color: var(--personal-paper);
+    outline: 2px solid var(--personal-rust);
+    outline-offset: 3px;
+  }
 }
 
 .ed {
@@ -36,6 +70,12 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 
   main {
     flex: 1 0 auto;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
   }
 
   a {
@@ -61,7 +101,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
   display: block;
   padding: 0;
   border-bottom: 1px solid var(--personal-line);
-  background: rgba(237, 242, 243, 0.94);
+  background: var(--personal-paper);
 }
 
 .ed-nav-inner {
@@ -87,7 +127,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 
   small {
     font-family: $personal-sans;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.4;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -96,6 +136,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 
   &:hover {
     color: var(--personal-ink) !important;
+    text-decoration: none;
   }
 }
 
@@ -108,7 +149,10 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 
   a {
     position: relative;
-    padding: 4px 0;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 0;
     color: var(--personal-body) !important;
     font-weight: 400;
     text-decoration: none;
@@ -118,7 +162,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
       position: absolute;
       left: 0;
       right: 100%;
-      bottom: 0;
+      bottom: 5px;
       height: 1px;
       background: currentColor;
       transition: right 160ms ease;
@@ -204,11 +248,10 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 }
 
 .personal-intro {
-  min-height: 670px;
-  padding: clamp(64px, 8vw, 112px) 0 clamp(68px, 8vw, 104px);
+  padding: clamp(56px, 6.5vw, 88px) 0 clamp(60px, 7vw, 88px);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 365px);
-  gap: clamp(48px, 7vw, 96px);
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 330px);
+  gap: clamp(36px, 5vw, 72px);
   align-items: center;
 }
 
@@ -216,11 +259,11 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
   max-width: 690px;
 
   h1 {
-    margin: 16px 0 28px;
+    margin: 0 0 24px;
     font-family: $personal-serif;
     font-size: clamp(58px, 7vw, 84px);
     line-height: 0.98;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.035em;
     font-weight: 600;
     color: var(--personal-ink);
   }
@@ -246,33 +289,35 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 23px;
+  gap: 4px 23px;
   font-family: $personal-sans;
   font-size: 13.5px;
 
   a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     color: var(--personal-green-dark);
   }
 }
 
 .personal-portrait {
   margin: 0;
-  transform: rotate(0.6deg);
 
   img {
     width: 100%;
+    height: auto;
     aspect-ratio: 3 / 4;
     display: block;
     object-fit: cover;
-    border: 1px solid #cbc4b6;
     background: var(--personal-paper-deep);
   }
 
   figcaption {
     margin-top: 10px;
-    font-size: 13px;
+    font-family: $personal-sans;
+    font-size: 12px;
     line-height: 1.4;
-    font-style: italic;
     color: var(--personal-muted);
     text-align: right;
   }
@@ -311,8 +356,8 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 }
 
 .personal-now-figure {
-  grid-column: 2;
-  width: min(100%, 680px);
+  grid-column: 2 / -1;
+  width: 100%;
   margin: -20px 0 0;
 
   iframe {
@@ -325,14 +370,13 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 }
 
 .personal-desk-note {
-  padding: 15px 0 0 17px;
-  border-left: 2px solid #c77b55;
+  padding: 15px 0 0;
+  border-top: 1px solid var(--personal-line);
   font-family: $personal-serif;
   font-size: 15px;
   line-height: 1.65;
   font-style: italic;
   color: var(--personal-body);
-  transform: rotate(-0.6deg);
 
   span {
     display: block;
@@ -392,14 +436,16 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 
   img {
     width: 100%;
+    height: auto;
     aspect-ratio: 4 / 3;
     display: block;
     object-fit: cover;
     filter: saturate(0.82);
-    transition: filter 180ms ease, transform 180ms ease;
+    transition: filter 180ms ease;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: inherit;
 
     h3 {
@@ -411,7 +457,6 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 
     img {
       filter: saturate(1);
-      transform: rotate(0.5deg);
     }
   }
 }
@@ -453,7 +498,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
 
 .personal-all-work {
   display: inline-block;
-  margin: 25px 0 0 150px;
+  margin: 25px 0 0 calc(150px + clamp(28px, 5vw, 68px));
   font-family: $personal-sans;
   font-size: 13.5px;
   font-weight: 600;
@@ -586,7 +631,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
     margin: 18px 0 0;
     font-size: clamp(56px, 6.7vw, 82px);
     line-height: 0.98;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.035em;
     font-weight: 600;
     color: var(--personal-ink);
   }
@@ -638,6 +683,7 @@ $personal-gutter: clamp(22px, 4.5vw, 64px);
     font-weight: 600;
     letter-spacing: -0.035em;
     color: var(--personal-green-dark);
+    font-variant-numeric: lining-nums tabular-nums;
   }
 
   p {
@@ -841,7 +887,7 @@ a.ed-card {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 10;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 0;
     filter: saturate(0.82);
     transition: filter 180ms ease;
@@ -861,6 +907,7 @@ a.ed-card {
     font-size: 14px;
     line-height: 1.4;
     font-style: italic;
+    font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
     color: var(--personal-rust);
@@ -872,6 +919,15 @@ a.ed-card {
     line-height: 1.12;
     letter-spacing: -0.025em;
     color: var(--personal-ink);
+    font-weight: 600;
+  }
+
+  &:hover .ed-card-title,
+  &:focus-visible .ed-card-title {
+    color: var(--personal-green);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.16em;
   }
 
   .ed-card-desc {
@@ -989,8 +1045,8 @@ a.ed-card {
 
   .personal-intro {
     min-height: 0;
-    grid-template-columns: minmax(0, 1fr) minmax(235px, 300px);
-    gap: 42px;
+    grid-template-columns: minmax(0, 1fr) minmax(210px, 260px);
+    gap: 32px;
   }
 
   .personal-now {
@@ -1013,7 +1069,7 @@ a.ed-card {
   }
 
   .personal-all-work {
-    margin-left: 110px;
+    margin-left: calc(110px + clamp(28px, 5vw, 68px));
   }
 
   .consulting-intro,
@@ -1059,9 +1115,10 @@ a.ed-card {
 
   .ed-navlinks {
     width: 100%;
-    justify-content: space-between;
-    gap: 12px;
-    font-size: 12.5px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0 18px;
+    font-size: 14px;
   }
 
   .ed-footer-inner {
@@ -1087,8 +1144,8 @@ a.ed-card {
   }
 
   .personal-portrait {
-    width: min(88%, 390px);
-    justify-self: center;
+    width: min(80%, 320px);
+    justify-self: start;
   }
 
   .personal-now,
@@ -1166,12 +1223,6 @@ a.ed-card {
 }
 
 @media (max-width: 440px) {
-  .ed-navlinks {
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding-bottom: 3px;
-  }
-
   .ed-navlinks a {
     flex: 0 0 auto;
   }
@@ -1198,5 +1249,14 @@ a.ed-card {
   .ed-cv-row.compact {
     grid-template-columns: 1fr;
     gap: 7px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ed-navlinks a::after,
+  .personal-project img,
+  .personal-project-copy h3,
+  a.ed-card img {
+    transition: none;
   }
 }

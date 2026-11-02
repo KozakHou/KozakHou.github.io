@@ -5,11 +5,11 @@
       <small>侯博瀚 · Numeric/Modelling/Fusion/SciML</small>
     </a>
     <nav class="ed-navlinks" aria-label="Primary navigation">
-      <a href="{{ '/' | relative_url }}" class="{% if page.ed_active == 'about' %}active{% endif %}">about</a>
-      <a href="{{ '/projects/' | relative_url }}" class="{% if page.ed_active == 'research' %}active{% endif %}">research</a>
-      <a href="{{ '/consulting/' | relative_url }}" class="{% if page.ed_active == 'consulting' %}active{% endif %}">consulting</a>
-      <a href="{{ '/publications/' | relative_url }}" class="{% if page.ed_active == 'publications' %}active{% endif %}">papers</a>
-      <a href="{{ '/CV/' | relative_url }}" class="{% if page.ed_active == 'cv' %}active{% endif %}">cv</a>
+      <a href="{{ '/' | relative_url }}" {% if page.ed_active == 'about' %}class="active" aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/projects/' | relative_url }}" {% if page.ed_active == 'research' %}class="active" aria-current="page"{% endif %}>Research</a>
+      <a href="{{ '/consulting/' | relative_url }}" {% if page.ed_active == 'consulting' %}class="active" aria-current="page"{% endif %}>Consulting</a>
+      <a href="{{ '/publications/' | relative_url }}" {% if page.ed_active == 'publications' %}class="active" aria-current="page"{% endif %}>Papers</a>
+      <a href="{{ '/CV/' | relative_url }}" {% if page.ed_active == 'cv' %}class="active" aria-current="page"{% endif %}>CV</a>
       {% if site.enable_darkmode %}
         <button id="light-toggle" class="ed-theme-toggle" title="Change theme" aria-label="Toggle theme">
           <i class="ti ti-sun-moon" id="light-toggle-system"></i>

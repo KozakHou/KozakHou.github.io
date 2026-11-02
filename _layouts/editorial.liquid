@@ -17,12 +17,13 @@
 
   <!-- Body -->
   <body class="ed-page-body">
+    <a class="ed-skip-link" href="#main-content">Skip to content</a>
     <div class="ed">
       <!-- Header -->
       {% include header.liquid %}
 
       <!-- Content -->
-      <main role="main">
+      <main id="main-content" tabindex="-1">
         {% if page.ed_article %}
           <article class="ed-detail">
             <a class="ed-back" href="{{ '/projects/' | relative_url }}">← Research &amp; Projects</a>
