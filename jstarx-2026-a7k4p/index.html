@@ -149,14 +149,6 @@
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
 
-<!-- FullCalendar CSS -->
-<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.css" rel="stylesheet">
-
-<!-- FullCalendar JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/locales-all.min.js"></script>
-
-
 <!-- Bootstrap Table -->
 
 
@@ -165,7 +157,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
-<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
 
 <!-- Code Syntax Highlighting -->
 <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
@@ -201,6 +193,7 @@
 
   <!-- Body -->
   <body class="ed-page-body">
+    <a class="ed-skip-link" href="#main-content">Skip to content</a>
     <div class="ed">
       <!-- Header -->
       <header class="ed-nav">
@@ -210,11 +203,11 @@
       <small>侯博瀚 · Numeric/Modelling/Fusion/SciML</small>
     </a>
     <nav class="ed-navlinks" aria-label="Primary navigation">
-      <a href="/" class="">about</a>
-      <a href="/projects/" class="">research</a>
-      <a href="/consulting/" class="">consulting</a>
-      <a href="/publications/" class="">papers</a>
-      <a href="/CV/" class="">cv</a>
+      <a href="/">About</a>
+      <a href="/projects/">Research</a>
+      <a href="/consulting/">Consulting</a>
+      <a href="/publications/">Papers</a>
+      <a href="/CV/">CV</a>
       
     </nav>
   </div>
@@ -222,7 +215,7 @@
 
 
       <!-- Content -->
-      <main role="main">
+      <main id="main-content" tabindex="-1">
         
           <style>
   .jsx-deck {
