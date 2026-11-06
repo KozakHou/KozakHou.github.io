@@ -51,7 +51,14 @@ nav_order: 7
 
     <div class="ed-cv-section" id="experience">EXPERIENCE</div>
     <div class="ed-cv-row">
-      <div class="ed-cv-date">Present</div>
+      <div class="ed-cv-date">2026 - Present</div>
+      <div>
+        <div class="ed-cv-title">Founder — <a href="https://origofusion.com" target="_blank" rel="noopener noreferrer">ORIGO Fusion</a></div>
+        <div class="ed-cv-detail">Developing physics-grounded computational technologies to accelerate fusion reactor design and engineering.</div>
+      </div>
+    </div>
+    <div class="ed-cv-row">
+      <div class="ed-cv-date">2026 - Present</div>
       <div>
         <div class="ed-cv-title">Independent Consultant — Scientific AI &amp; HPC</div>
         <div class="ed-cv-detail">Feasibility studies, prototypes, and technical advisory for simulation acceleration.</div>
