@@ -58,13 +58,6 @@ nav_order: 7
       </div>
     </div>
     <div class="ed-cv-row">
-      <div class="ed-cv-date">2026 - Present</div>
-      <div>
-        <div class="ed-cv-title">Independent Consultant — Scientific AI &amp; HPC</div>
-        <div class="ed-cv-detail">Feasibility studies, prototypes, and technical advisory for simulation acceleration.</div>
-      </div>
-    </div>
-    <div class="ed-cv-row">
       <div class="ed-cv-date">2025 - Present</div>
       <div>
         <div class="ed-cv-title">Full Stack Software Engineer (FDE) — XingAn Clinic</div>
